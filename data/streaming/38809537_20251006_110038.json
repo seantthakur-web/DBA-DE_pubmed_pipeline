@@ -1,0 +1,584 @@
+{
+  "MedlineCitation": {
+    "OtherAbstract": [],
+    "CitationSubset": [
+      "IM"
+    ],
+    "SpaceFlightMission": [],
+    "InvestigatorList": [
+      [
+        {
+          "AffiliationInfo": [],
+          "Identifier": [],
+          "LastName": "Kim",
+          "ForeName": "Seok-Ki",
+          "Initials": "SK"
+        },
+        {
+          "AffiliationInfo": [],
+          "Identifier": [],
+          "LastName": "Rho",
+          "ForeName": "Ji Yoon",
+          "Initials": "JY"
+        },
+        {
+          "AffiliationInfo": [],
+          "Identifier": [],
+          "LastName": "Won",
+          "ForeName": "Chi Lan",
+          "Initials": "CL"
+        },
+        {
+          "AffiliationInfo": [],
+          "Identifier": [],
+          "LastName": "Kim",
+          "ForeName": "Kyoung Lae",
+          "Initials": "KL"
+        }
+      ]
+    ],
+    "GeneralNote": [],
+    "KeywordList": [],
+    "OtherID": [],
+    "PMID": "38809537",
+    "DateCompleted": {
+      "Year": "2024",
+      "Month": "08",
+      "Day": "21"
+    },
+    "DateRevised": {
+      "Year": "2025",
+      "Month": "05",
+      "Day": "31"
+    },
+    "Article": {
+      "ELocationID": [
+        "10.1001/jamasurg.2024.1210"
+      ],
+      "ArticleDate": [],
+      "Language": [
+        "eng"
+      ],
+      "Journal": {
+        "ISSN": "2168-6262",
+        "JournalIssue": {
+          "Volume": "159",
+          "Issue": "8",
+          "PubDate": {
+            "Year": "2024",
+            "Month": "Aug",
+            "Day": "01"
+          }
+        },
+        "Title": "JAMA surgery",
+        "ISOAbbreviation": "JAMA Surg"
+      },
+      "ArticleTitle": "Quality of Life and Nutritional Outcomes of Stomach-Preserving Surgery for Early Gastric Cancer: A Secondary Analysis of the SENORITA Randomized Clinical Trial.",
+      "Pagination": {
+        "StartPage": "900",
+        "EndPage": "908",
+        "MedlinePgn": "900-908"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "The Sentinel Node Oriented Tailored Approach (SENORITA) randomized clinical trial evaluated quality of life (QoL) and nutritional outcomes between the laparoscopic sentinel node navigation surgery (LSNNS) and laparoscopic standard gastrectomy (LSG). However, there has been no report on the QoL and nutritional outcomes of patients who underwent stomach-preserving surgery among the LSNNS group.",
+          "To compare long-term QoL and nutritional outcomes between patients who underwent stomach-preserving surgery and those who underwent standard gastrectomy and to identify factors associated with poor QoL outcomes in patients who underwent stomach-preserving surgery.",
+          "This study is a secondary analysis of the SENORITA trial, a randomized clinical trial comparing LSNNS with LSG. Patients from 7 tertiary or general hospitals across the Republic of Korea were enrolled from March 2013 to December 2016, with follow-up through 5 years. Data were analyzed between August and September 2022. Among trial participants, patients who underwent actual laparoscopic standard gastrectomy in the LSG group and those who underwent stomach-preserving surgery in the LSNNS group were included. Patients who did not complete the baseline or any follow-up questionnaire were excluded.",
+          "Stomach-preserving surgery vs standard gastrectomy.",
+          "Overall European Organization for Research and Treatment of Cancer QoL Questionnaire Core 30 (EORTC QLQ-C30) and stomach module (STO22) scores, body mass index, hemoglobin, protein, and albumin levels.",
+          "A total of 194 and 257 patients who underwent stomach-preserving surgery and standard gastrectomy, respectively, were included in this study (mean [SD] age, 55.6 [10.6] years; 249 [55.2%] male). The stomach-preserving group had better QoL scores at 3 months postoperatively in terms of physical function (87.2 vs 83.9), dyspnea (5.9 vs 11.2), appetite loss (13.1 vs 19.4), dysphagia (8.0 vs 12.7), eating restriction (10.9 vs 18.2), anxiety (29.0 vs 35.2), taste change (7.4 vs 13.0), and body image (19.5 vs 27.2). At 1 year postoperatively, the stomach-preserving group had significantly higher body mass index (23.9 vs 22.1, calculated as weight in kilograms divided by height in meters squared) and hemoglobin (14.3 vs 13.3 g/dL), albumin (4.3 vs 4.25 g/dL), and protein (7.3 vs 7.1 g/dL) levels compared to the standard group. Multivariable analyses showed that tumor location (greater curvature, lower third) was favorably associated with global health status (\u03b2, 10.5; 95% CI, 3.2 to 17.8), reflux (\u03b2, -8.4; 95% CI, -14.7 to -2.1), and eating restriction (\u03b2, -5.7; 95% CI, -10.3 to -1.0) at 3 months postoperatively in the stomach-preserving group. Segmental resection was associated with risk of diarrhea (\u03b2, 40.6; 95% CI, 3.1 to 78.1) and eating restriction (\u03b2, 15.1; 95% CI, 1.1 to 29.1) at 3 years postoperatively.",
+          "Stomach-preserving surgery after sentinel node evaluation was associated with better long-term QoL and nutritional outcomes than standard gastrectomy. These findings may help facilitate decision-making regarding treatment for patients with early-stage gastric cancer.",
+          "ClinicalTrials.gov Identifier: NCT01804998."
+        ]
+      },
+      "AuthorList": [
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Center of Gastric Cancer, National Cancer Center, Goyang, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Eom",
+          "ForeName": "Bang Wool",
+          "Initials": "BW"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Center of Gastric Cancer, National Cancer Center, Goyang, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Yoon",
+          "ForeName": "Hong Man",
+          "Initials": "HM"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Center of Gastric Cancer, National Cancer Center, Goyang, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Kim",
+          "ForeName": "Young-Woo",
+          "Initials": "YW"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Dongnam Institute of Radiological and Medical Sciences, Cancer Center, Busan, Republic of Korea."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Currently with Division of Foregut Surgery, Department of Surgery, Korea University College of Medicine, Korea University Anam Hospital, Seoul, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Min",
+          "ForeName": "Jae-Seok",
+          "Initials": "JS"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Yonsei University College of Medicine, Seoul, Republic of Korea."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "An",
+          "ForeName": "Ji Yeong",
+          "Initials": "JY"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Ajou University School of Medicine, Suwon, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Hur",
+          "ForeName": "Hoon",
+          "Initials": "H"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Gyeongsang National University College of Medicine, Jinju, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Lee",
+          "ForeName": "Young Joon",
+          "Initials": "YJ"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Soonchunhyang University College of Medicine, Bucheon, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Cho",
+          "ForeName": "Gyu Seok",
+          "Initials": "GS"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Chonnam National University Hwasun Hospital, Hwasun, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Park",
+          "ForeName": "Young Kyu",
+          "Initials": "YK"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Chonnam National University Hwasun Hospital, Hwasun, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Jung",
+          "ForeName": "Mi Ran",
+          "Initials": "MR"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Gyeongsang National University College of Medicine, Jinju, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Park",
+          "ForeName": "Ji Ho",
+          "Initials": "JH"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Yonsei University College of Medicine, Seoul, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Hyung",
+          "ForeName": "Woo Jin",
+          "Initials": "WJ"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Surgery, Gyeongsang National University College of Medicine, Jinju, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Jeong",
+          "ForeName": "Sang Ho",
+          "Initials": "SH"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Center of Gastric Cancer, National Cancer Center, Goyang, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Kook",
+          "ForeName": "Myeong-Cherl",
+          "Initials": "MC"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Biostatistics Collaboration Team, National Cancer Center, Goyang, Republic of Korea."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Medical Research Collaborating Center, Seoul Metropolitan Government-Seoul National University Boramae Medical Center, Seoul, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Han",
+          "ForeName": "Mira",
+          "Initials": "M"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Cancer Control and Policy, Graduate School of Cancer Science and Policy, National Cancer Center, Goyang, Republic of Korea."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Clinical Design Research Center, HERINGS The Institution of Advanced Clinical & Biomedical Research, Seoul, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Nam",
+          "ForeName": "Byung-Ho",
+          "Initials": "BH"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Center of Gastric Cancer, National Cancer Center, Goyang, Republic of Korea."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Ryu",
+          "ForeName": "Keun Won",
+          "Initials": "KW"
+        },
+        {
+          "AffiliationInfo": [],
+          "Identifier": [],
+          "CollectiveName": "Sentinel Node Oriented Tailored Approach (SENORITA) Study Group"
+        }
+      ],
+      "DataBankList": [
+        {
+          "DataBankName": "ClinicalTrials.gov",
+          "AccessionNumberList": [
+            "NCT01804998"
+          ]
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Comment"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "United States",
+      "MedlineTA": "JAMA Surg",
+      "NlmUniqueID": "101589553",
+      "ISSNLinking": "2168-6254"
+    },
+    "CommentsCorrectionsList": [
+      {
+        "RefSource": "JAMA Surg. 2024 Aug 1;159(8):908-909. doi: 10.1001/jamasurg.2024.1211.",
+        "PMID": "38809564"
+      },
+      {
+        "RefSource": "JAMA Surg. 2024 Aug 1;159(8):960. doi: 10.1001/jamasurg.2024.2710.",
+        "PMID": "38985490"
+      }
+    ],
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Aged"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Female"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Male"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Middle Aged"
+      },
+      {
+        "QualifierName": [
+          "methods"
+        ],
+        "DescriptorName": "Gastrectomy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Laparoscopy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Status"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Organ Sparing Treatments"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Quality of Life"
+      },
+      {
+        "QualifierName": [
+          "surgery"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Treatment Outcome"
+      }
+    ],
+    "CoiStatement": "<b>Conflict of Interest Disclosures:</b> Dr Yoon reported a patent for alginate-based injectable hydrogel system licensed to Dr Choi. Dr Hyung reported personal fees from Hutom outside the submitted work. No other disclosures were reported."
+  },
+  "PubmedData": {
+    "ReferenceList": [
+      {
+        "ReferenceList": [],
+        "Reference": [
+          {
+            "Citation": "Kim TH, Kim IH, Kang SJ, et al. ; Development Working Groups for the Korean Practice Guidelines for Gastric Cancer 2022 Task Force Team . Korean practice guidelines for gastric cancer 2022: an evidence-based, multidisciplinary approach. J Gastric Cancer. 2023;23(1):3-106. doi:10.5230/jgc.2023.23.e11",
+            "ArticleIdList": [
+              "10.5230/jgc.2023.23.e11",
+              "PMC9911619",
+              "36750993"
+            ]
+          },
+          {
+            "Citation": "Eom SS, Choi W, Eom BW, et al. . A comprehensive and comparative review of global gastric cancer treatment guidelines. J Gastric Cancer. 2022;22(1):3-23. doi:10.5230/jgc.2022.22.e10",
+            "ArticleIdList": [
+              "10.5230/jgc.2022.22.e10",
+              "PMC8980601",
+              "35425651"
+            ]
+          },
+          {
+            "Citation": "Kim SG, Eom BW, Yoon HM, et al. . Recent updates and current issues of sentinel node navigation surgery for early gastric cancer. Chin J Cancer Res. 2021;33(2):142-149. doi:10.21147/j.issn.1000-9604.2021.02.02",
+            "ArticleIdList": [
+              "10.21147/j.issn.1000-9604.2021.02.02",
+              "PMC8181869",
+              "34158734"
+            ]
+          },
+          {
+            "Citation": "Booka E, Takeuchi H. Recent advances in sentinel node navigation surgery for early gastric cancer. J Gastric Cancer. 2023;23(1):159-170. doi:10.5230/jgc.2023.23.e4",
+            "ArticleIdList": [
+              "10.5230/jgc.2023.23.e4",
+              "PMC9911613",
+              "36750996"
+            ]
+          },
+          {
+            "Citation": "Park JY, Kim YW, Ryu KW, et al. . Assessment of laparoscopic stomach preserving surgery with sentinel basin dissection versus standard gastrectomy with lymphadenectomy in early gastric cancer\u2014a multicenter randomized phase III clinical trial (SENORITA trial) protocol. BMC Cancer. 2016;16:340. doi:10.1186/s12885-016-2336-8",
+            "ArticleIdList": [
+              "10.1186/s12885-016-2336-8",
+              "PMC4886393",
+              "27246120"
+            ]
+          },
+          {
+            "Citation": "Kim YW, Min JS, Yoon HM, et al. . Laparoscopic sentinel node navigation surgery for stomach preservation in patients with early gastric cancer: a randomized clinical trial. J Clin Oncol. 2022;40(21):2342-2351. doi:10.1200/JCO.21.02242",
+            "ArticleIdList": [
+              "10.1200/JCO.21.02242",
+              "PMC9287280",
+              "35324317"
+            ]
+          },
+          {
+            "Citation": "An JY, Min JS, Hur H, et al. ; SEntinel Node ORIented Tailored Approach (SENORITA) Study Group . Laparoscopic sentinel node navigation surgery versus laparoscopic gastrectomy with lymph node dissection for early gastric cancer: short-term outcomes of a multicentre randomized controlled trial (SENORITA). Br J Surg. 2020;107(11):1429-1439. doi:10.1002/bjs.11655",
+            "ArticleIdList": [
+              "10.1002/bjs.11655",
+              "32492186"
+            ]
+          },
+          {
+            "Citation": "Japanese Gastric Cancer Association . Japanese gastric cancer treatment guidelines 2010 (ver. 3). Gastric Cancer. 2011;14(2):113-123. doi:10.1007/s10120-011-0042-4",
+            "ArticleIdList": [
+              "10.1007/s10120-011-0042-4",
+              "21573742"
+            ]
+          },
+          {
+            "Citation": "Center ED. EORTC QLQ-C30 Scoring Manual. EORTC. https://www.eortc.org/app/uploads/sites/2/2018/02/SCmanual.pdf. Published 2001. Accessed."
+          },
+          {
+            "Citation": "Kim AR, Cho J, Hsu YJ, et al. . Changes of quality of life in gastric cancer patients after curative resection: a longitudinal cohort study in Korea. Ann Surg. 2012;256(6):1008-1013. doi:10.1097/SLA.0b013e31827661c9",
+            "ArticleIdList": [
+              "10.1097/SLA.0b013e31827661c9",
+              "23154395"
+            ]
+          },
+          {
+            "Citation": "Karanicolas PJ, Graham D, G\u00f6nen M, Strong VE, Brennan MF, Coit DG. Quality of life after gastrectomy for adenocarcinoma: a prospective cohort study. Ann Surg. 2013;257(6):1039-1046. doi:10.1097/SLA.0b013e31828c4a19",
+            "ArticleIdList": [
+              "10.1097/SLA.0b013e31828c4a19",
+              "PMC4104506",
+              "23665970"
+            ]
+          },
+          {
+            "Citation": "Kwon OK, Yu B, Park KB, Park JY, Lee SS, Chung HY. Advantages of distal subtotal gastrectomy over total gastrectomy in the quality of life of long-term gastric cancer survivors. J Gastric Cancer. 2020;20(2):176-189. doi:10.5230/jgc.2020.20.e17",
+            "ArticleIdList": [
+              "10.5230/jgc.2020.20.e17",
+              "PMC7311217",
+              "32596001"
+            ]
+          },
+          {
+            "Citation": "Lee JH, Hyung WJ, Kim HI, et al. . Method of reconstruction governs iron metabolism after gastrectomy for patients with gastric cancer. Ann Surg. 2013;258(6):964-969. doi:10.1097/SLA.0b013e31827eebc1",
+            "ArticleIdList": [
+              "10.1097/SLA.0b013e31827eebc1",
+              "23324857"
+            ]
+          },
+          {
+            "Citation": "Kim HJ, Lee ES, Kim BJ, et al. . Risk factors and clinical outcomes of postgastrectomy sarcopenia newly developed after curative resection for gastric cancer. Medicine (Baltimore). 2022;101(6):e28699. doi:10.1097/MD.0000000000028699",
+            "ArticleIdList": [
+              "10.1097/MD.0000000000028699",
+              "PMC8830859",
+              "35147091"
+            ]
+          },
+          {
+            "Citation": "Kim KH, Park DJ, Park YS, Ahn SH, Park DJ, Kim HH. Actual 5-year nutritional outcomes of patients with gastric cancer. J Gastric Cancer. 2017;17(2):99-109. doi:10.5230/jgc.2017.17.e12",
+            "ArticleIdList": [
+              "10.5230/jgc.2017.17.e12",
+              "PMC5489549",
+              "28680715"
+            ]
+          },
+          {
+            "Citation": "Eom BW, Park B, Yoon HM, Ryu KW, Kim YW. Laparoscopy-assisted pylorus-preserving gastrectomy for early gastric cancer: a retrospective study of long-term functional outcomes and quality of life. World J Gastroenterol. 2019;25(36):5494-5504. doi:10.3748/wjg.v25.i36.5494",
+            "ArticleIdList": [
+              "10.3748/wjg.v25.i36.5494",
+              "PMC6767989",
+              "31576095"
+            ]
+          },
+          {
+            "Citation": "Yaguchi Y, Tsujimoto H, Kumano I, et al. . Sentinel node navigation surgery attenuates the functional disorders in early gastric cancer. Oncol Rep. 2012;27(3):643-649.",
+            "ArticleIdList": [
+              "22134751"
+            ]
+          },
+          {
+            "Citation": "Okubo K, Arigami T, Matsushita D, et al. . Evaluation of postoperative quality of life by PGSAS-45 following local gastrectomy based on the sentinel lymph node concept in early gastric cancer. Gastric Cancer. 2020;23(4):746-753. doi:10.1007/s10120-020-01047-7",
+            "ArticleIdList": [
+              "10.1007/s10120-020-01047-7",
+              "32086650"
+            ]
+          }
+        ]
+      }
+    ],
+    "History": [
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "21",
+        "Hour": "18",
+        "Minute": "41"
+      },
+      {
+        "Year": "2024",
+        "Month": "5",
+        "Day": "29",
+        "Hour": "12",
+        "Minute": "44"
+      },
+      {
+        "Year": "2024",
+        "Month": "5",
+        "Day": "29",
+        "Hour": "11",
+        "Minute": "33"
+      },
+      {
+        "Year": "2025",
+        "Month": "5",
+        "Day": "29"
+      }
+    ],
+    "PublicationStatus": "ppublish",
+    "ArticleIdList": [
+      "38809537",
+      "PMC11137655",
+      "10.1001/jamasurg.2024.1210",
+      "2819229"
+    ]
+  }
+}

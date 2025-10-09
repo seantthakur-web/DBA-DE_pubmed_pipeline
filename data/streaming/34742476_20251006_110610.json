@@ -1,0 +1,196 @@
+{
+  "MedlineCitation": {
+    "SpaceFlightMission": [],
+    "OtherID": [],
+    "InvestigatorList": [],
+    "CitationSubset": [
+      "IM"
+    ],
+    "OtherAbstract": [],
+    "KeywordList": [
+      [
+        "Artificial nutrition",
+        "C\u00e1ncer g\u00e1strico",
+        "Desnutrici\u00f3n",
+        "Dumping syndrome",
+        "Gastrectomy",
+        "Gastrectom\u00eda",
+        "Gastric cancer",
+        "Malnutrition",
+        "Nutrici\u00f3n artificial",
+        "S\u00edndrome de dumping"
+      ]
+    ],
+    "GeneralNote": [],
+    "PMID": "34742476",
+    "DateCompleted": {
+      "Year": "2022",
+      "Month": "01",
+      "Day": "07"
+    },
+    "DateRevised": {
+      "Year": "2022",
+      "Month": "01",
+      "Day": "07"
+    },
+    "Article": {
+      "Language": [
+        "eng"
+      ],
+      "ELocationID": [
+        "10.1016/j.endien.2020.09.005",
+        "S2530-0180(21)00082-2"
+      ],
+      "ArticleDate": [
+        {
+          "Year": "2021",
+          "Month": "10",
+          "Day": "12"
+        }
+      ],
+      "Journal": {
+        "ISSN": "2530-0180",
+        "JournalIssue": {
+          "Volume": "68",
+          "Issue": "6",
+          "PubDate": {
+            "Year": "2021",
+            "Season": "Jun-Jul"
+          }
+        },
+        "Title": "Endocrinologia, diabetes y nutricion",
+        "ISOAbbreviation": "Endocrinol Diabetes Nutr (Engl Ed)"
+      },
+      "ArticleTitle": "Nutritional management of gastric cancer.",
+      "Pagination": {
+        "StartPage": "428",
+        "EndPage": "438",
+        "MedlinePgn": "428-438"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "Gastric cancer is the third leading cause of cancer mortality and is frequently associated with nutritional disorders, the detection and proper management of which can contribute to improving quality of life and survival. Being aware of the consequences and of the different treatments for this neoplasm allows us to offer an adequate nutritional approach. In surgical candidates, integration into ERAS-type programs is increasingly frequent, and includes a pre-surgical nutritional approach and the initiation of early oral tolerance. After gastrectomy, the new anatomical and functional state of the digestive tract may lead to the appearance of \"post-gastrectomy syndromes\", the management of which may require diet modification and medical treatment. Those who receive neoadjuvant or adjuvant antineoplastic therapy benefit from specific dietary recommendations based on intercurrent symptoms and/or artificial nutrition. In palliative patients, the nutritional approach should be carried out while respecting the principle of autonomy and weighing the risks and benefits of the intervention. The objective of this review is to highlight the importance and role of nutrition in patients with gastric cancer and to provide guidelines for nutritional management based on the current evidence."
+        ],
+        "CopyrightInformation": "Copyright \u00a9 2020 SEEN and SED. Published by Elsevier Espa\u00f1a, S.L.U. All rights reserved."
+      },
+      "AuthorList": [
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Servicio de Endocrinolog\u00eda y Nutrici\u00f3n, Hospital Universitario de La Princesa, Madrid, Spain. Electronic address: e.carrillolozano@gmail.com."
+            }
+          ],
+          "LastName": "Carrillo Lozano",
+          "ForeName": "Elena",
+          "Initials": "E"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Servicio de Endocrinolog\u00eda y Nutrici\u00f3n, Hospital San Pedro, Logro\u00f1o, Spain."
+            }
+          ],
+          "LastName": "Os\u00e9s Z\u00e1rate",
+          "ForeName": "Virginia",
+          "Initials": "V"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Servicio de Endocrinolog\u00eda y Nutrici\u00f3n, Hospital Universitario Puerta de Hierro Majadahonda, Madrid, Spain."
+            }
+          ],
+          "LastName": "Campos Del Portillo",
+          "ForeName": "Roc\u00edo",
+          "Initials": "R"
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Review"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "Spain",
+      "MedlineTA": "Endocrinol Diabetes Nutr (Engl Ed)",
+      "NlmUniqueID": "101717565",
+      "ISSNLinking": "2530-0180"
+    },
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Gastrectomy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutrition Assessment"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Status"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Quality of Life"
+      },
+      {
+        "QualifierName": [
+          "surgery"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      }
+    ]
+  },
+  "PubmedData": {
+    "ReferenceList": [],
+    "History": [
+      {
+        "Year": "2020",
+        "Month": "6",
+        "Day": "6"
+      },
+      {
+        "Year": "2020",
+        "Month": "9",
+        "Day": "17"
+      },
+      {
+        "Year": "2021",
+        "Month": "11",
+        "Day": "7",
+        "Hour": "20",
+        "Minute": "25"
+      },
+      {
+        "Year": "2021",
+        "Month": "11",
+        "Day": "8",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2022",
+        "Month": "1",
+        "Day": "8",
+        "Hour": "6",
+        "Minute": "0"
+      }
+    ],
+    "PublicationStatus": "ppublish",
+    "ArticleIdList": [
+      "34742476",
+      "10.1016/j.endien.2020.09.005",
+      "S2530-0180(21)00082-2"
+    ]
+  }
+}

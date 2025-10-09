@@ -1,0 +1,209 @@
+{
+  "MedlineCitation": {
+    "CitationSubset": [
+      "IM"
+    ],
+    "KeywordList": [
+      [
+        "Gastric cancer",
+        "Malnutrition",
+        "Nutrition assessment",
+        "Nutrition screening",
+        "Nutritional status",
+        "Perioperative nutrition support"
+      ]
+    ],
+    "GeneralNote": [],
+    "SpaceFlightMission": [],
+    "InvestigatorList": [],
+    "OtherAbstract": [],
+    "OtherID": [],
+    "PMID": "34655954",
+    "DateCompleted": {
+      "Year": "2021",
+      "Month": "12",
+      "Day": "09"
+    },
+    "DateRevised": {
+      "Year": "2021",
+      "Month": "12",
+      "Day": "14"
+    },
+    "Article": {
+      "ArticleDate": [
+        {
+          "Year": "2021",
+          "Month": "09",
+          "Day": "20"
+        }
+      ],
+      "Language": [
+        "eng"
+      ],
+      "ELocationID": [
+        "10.1016/j.nut.2021.111492",
+        "S0899-9007(21)00354-3"
+      ],
+      "Journal": {
+        "ISSN": "1873-1244",
+        "JournalIssue": {
+          "Volume": "93",
+          "PubDate": {
+            "Year": "2022",
+            "Month": "Jan"
+          }
+        },
+        "Title": "Nutrition (Burbank, Los Angeles County, Calif.)",
+        "ISOAbbreviation": "Nutrition"
+      },
+      "ArticleTitle": "Perioperative nutrition management for gastric cancer.",
+      "Pagination": {
+        "StartPage": "111492",
+        "MedlinePgn": "111492"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "Gastric cancer is one of the most frequently diagnosed and the leading cause of cancer death worldwide. Malnutrition is a substantial problem in patients with gastric cancer, associated with poor treatment tolerance and increased morbidity. It has also been recognized as an independent prognostic factor in individuals with cancer. Early detection of malnutrition and effective perioperative nutrition intervention play an important role in the treatment of gastric cancer. Nutrition screening and assessment are the first steps in nutrition management and provide a basis for further nutrition support. Several tools, including the Nutrition Risk Screening-2002 and Patient-Generated Subjective Global Assessment, have been developed for nutrition screening and assessment. Effective nutrition support can significantly improve nutritional and immune status, reduce the incidence of postoperative complications, and accelerate recovery. The aim of this review was to focus on preoperative nutrition risk screening and assessment, and perioperative nutrition support, which may serve as a framework of perioperative nutrition management for gastric cancer."
+        ],
+        "CopyrightInformation": "Copyright \u00a9 2021 Elsevier Inc. All rights reserved."
+      },
+      "AuthorList": [
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastrointestinal Surgery, Sichuan Cancer Hospital, School of Medicine, University of Electronic Science and Technology of China, Chengdu, China."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Xu",
+          "ForeName": "Rui",
+          "Initials": "R"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastrointestinal Surgery, Sichuan Cancer Hospital, School of Medicine, University of Electronic Science and Technology of China, Chengdu, China. Electronic address: gis_sch@163.com."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Chen",
+          "ForeName": "Xiao-Dong",
+          "Initials": "XD"
+        },
+        {
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastrointestinal Surgery, Sichuan Cancer Hospital, School of Medicine, University of Electronic Science and Technology of China, Chengdu, China."
+            }
+          ],
+          "Identifier": [],
+          "LastName": "Ding",
+          "ForeName": "Zhi",
+          "Initials": "Z"
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Review"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "United States",
+      "MedlineTA": "Nutrition",
+      "NlmUniqueID": "8802712",
+      "ISSNLinking": "0899-9007"
+    },
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [
+          "diagnosis",
+          "prevention & control"
+        ],
+        "DescriptorName": "Malnutrition"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutrition Assessment"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutrition Therapy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Status"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Support"
+      },
+      {
+        "QualifierName": [
+          "epidemiology",
+          "prevention & control"
+        ],
+        "DescriptorName": "Postoperative Complications"
+      },
+      {
+        "QualifierName": [
+          "surgery"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      }
+    ]
+  },
+  "PubmedData": {
+    "ReferenceList": [],
+    "History": [
+      {
+        "Year": "2020",
+        "Month": "9",
+        "Day": "8"
+      },
+      {
+        "Year": "2021",
+        "Month": "8",
+        "Day": "29"
+      },
+      {
+        "Year": "2021",
+        "Month": "9",
+        "Day": "8"
+      },
+      {
+        "Year": "2021",
+        "Month": "10",
+        "Day": "17",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2021",
+        "Month": "12",
+        "Day": "15",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2021",
+        "Month": "10",
+        "Day": "16",
+        "Hour": "20",
+        "Minute": "22"
+      }
+    ],
+    "PublicationStatus": "ppublish",
+    "ArticleIdList": [
+      "34655954",
+      "10.1016/j.nut.2021.111492",
+      "S0899-9007(21)00354-3"
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "MedlineCitation": {
+    "SpaceFlightMission": [],
+    "OtherID": [],
+    "InvestigatorList": [],
+    "CitationSubset": [
+      "IM"
+    ],
+    "OtherAbstract": [],
+    "KeywordList": [],
+    "GeneralNote": [],
+    "PMID": "38147605",
+    "DateCompleted": {
+      "Year": "2023",
+      "Month": "12",
+      "Day": "28"
+    },
+    "DateRevised": {
+      "Year": "2025",
+      "Month": "05",
+      "Day": "01"
+    },
+    "Article": {
+      "Language": [
+        "eng"
+      ],
+      "ELocationID": [
+        "10.15403/jgld-5238"
+      ],
+      "ArticleDate": [
+        {
+          "Year": "2023",
+          "Month": "12",
+          "Day": "22"
+        }
+      ],
+      "Journal": {
+        "ISSN": "1842-1121",
+        "JournalIssue": {
+          "Volume": "32",
+          "Issue": "4",
+          "PubDate": {
+            "Year": "2023",
+            "Month": "Dec",
+            "Day": "22"
+          }
+        },
+        "Title": "Journal of gastrointestinal and liver diseases : JGLD",
+        "ISOAbbreviation": "J Gastrointestin Liver Dis"
+      },
+      "ArticleTitle": "Anastomotic Leakage after Gastrectomy for Gastric Cancer.",
+      "Pagination": {
+        "StartPage": "526",
+        "EndPage": "535",
+        "MedlinePgn": "526-535"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "Anastomotic leakage (AL) constitutes a prominent cause of significant morbidity following gastrectomy for gastric cancer. The manifestation of AL typically occurs within 7 to 10 days post-surgery, with reported incidence rates of 5.8-6.7% for open gastrectomy and 3.3-4.1% for laparoscopic gastrectomy. Various predisposing risk factors have been identified, including the individual nutritional status (excluding obesity) and preoperative corticotherapy. Interestingly, the administration of neoadjuvant therapies appears to reduce the AL occurrence. In the context of distal gastrectomies, the rates of AL are comparable between laparoscopic, robotic, and open approaches. The total gastrectomies have higher AL rate compared to distal gastrectomies, which are considered the preferred approach. Prophylactic drainage measures have not demonstrated efficacy in preventing AL. As for postoperative management, conservative treatment is indicated for patients presenting with mild clinical symptoms and increased inflammatory blood tests. This approach involves fasting, enteral or parenteral nutrition, administration of antibiotics, and percutaneous drainage. For small AL, endoscopic therapies such as stents, vacuum therapy, clips, suturing devices, and injections are appropriate treatment options. In cases of high-volume fistulas, severe sepsis or failure of previous therapies, surgical reoperation becomes the ultimate solution."
+        ]
+      },
+      "AuthorList": [
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Iuliu Ha\u021bieganu University of Medicine and Pharmacy, Cluj-Napoca; 2) First Surgical Clinic, Cluj-Napoca, Romania. . rseicean@yahoo.com."
+            }
+          ],
+          "LastName": "Seicean",
+          "ForeName": "Radu Ion",
+          "Initials": "RI"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Institute of Oncology, Department of Medical Oncology, Bucharest, Romania. danusia.puscasu@gmail.com."
+            }
+          ],
+          "LastName": "Puscasu",
+          "ForeName": "Danusia",
+          "Initials": "D"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Emergency County Hospital Cluj-Napoca, Romania. gheorghiu.andrew@gmail.com."
+            }
+          ],
+          "LastName": "Gheorghiu",
+          "ForeName": "Andrei",
+          "Initials": "A"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Regional Institute of Gastroenterology and Hepatology, Cluj-Napoca; UBB Med., Babes Bolyai University, Cluj-Napoca, Romania. cristinapojoga@yahoo.com."
+            }
+          ],
+          "LastName": "Pojoga",
+          "ForeName": "Cristina",
+          "Initials": "C"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Iuliu Ha\u021bieganu University of Medicine and Pharmacy, Cluj-Napoca; Regional Institute of Gastroenterology and Hepatology, Cluj-Napoca, Romania. andradaseicean@gmail.com."
+            }
+          ],
+          "LastName": "Seicean",
+          "ForeName": "Andrada",
+          "Initials": "A"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Iuliu Ha\u021bieganu University of Medicine and Pharmacy, Cluj-Napoca; 2) First Surgical Clinic, Cluj-Napoca, Romania. george.dindelegan@gmail.com."
+            }
+          ],
+          "LastName": "Dindelegan",
+          "ForeName": "George",
+          "Initials": "G"
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Review"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "Romania",
+      "MedlineTA": "J Gastrointestin Liver Dis",
+      "NlmUniqueID": "101272825",
+      "ISSNLinking": "1841-8724"
+    },
+    "CommentsCorrectionsList": [
+      {
+        "RefSource": "J Gastrointestin Liver Dis. 2024 Sep 29;33(3):424-425. doi: 10.15403/jgld-5813.",
+        "PMID": "39348572"
+      }
+    ],
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [
+          "etiology",
+          "therapy"
+        ],
+        "DescriptorName": "Anastomotic Leak"
+      },
+      {
+        "QualifierName": [
+          "surgery",
+          "complications"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      },
+      {
+        "QualifierName": [
+          "adverse effects"
+        ],
+        "DescriptorName": "Gastrectomy"
+      },
+      {
+        "QualifierName": [
+          "adverse effects"
+        ],
+        "DescriptorName": "Laparoscopy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Intestine, Small"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Retrospective Studies"
+      }
+    ]
+  },
+  "PubmedData": {
+    "ReferenceList": [],
+    "History": [
+      {
+        "Year": "2023",
+        "Month": "9",
+        "Day": "20"
+      },
+      {
+        "Year": "2023",
+        "Month": "10",
+        "Day": "15"
+      },
+      {
+        "Year": "2023",
+        "Month": "12",
+        "Day": "28",
+        "Hour": "6",
+        "Minute": "42"
+      },
+      {
+        "Year": "2023",
+        "Month": "12",
+        "Day": "26",
+        "Hour": "18",
+        "Minute": "41"
+      },
+      {
+        "Year": "2023",
+        "Month": "12",
+        "Day": "26",
+        "Hour": "15",
+        "Minute": "53"
+      }
+    ],
+    "PublicationStatus": "epublish",
+    "ArticleIdList": [
+      "38147605",
+      "10.15403/jgld-5238"
+    ]
+  }
+}

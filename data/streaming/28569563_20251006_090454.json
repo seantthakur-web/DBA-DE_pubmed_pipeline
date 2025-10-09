@@ -1,0 +1,208 @@
+{
+  "MedlineCitation": {
+    "OtherID": [],
+    "InvestigatorList": [],
+    "CitationSubset": [
+      "IM"
+    ],
+    "SpaceFlightMission": [],
+    "GeneralNote": [],
+    "KeywordList": [],
+    "OtherAbstract": [],
+    "PMID": "28569563",
+    "DateCompleted": {
+      "Year": "2018",
+      "Month": "04",
+      "Day": "24"
+    },
+    "DateRevised": {
+      "Year": "2018",
+      "Month": "12",
+      "Day": "02"
+    },
+    "Article": {
+      "Language": [
+        "eng"
+      ],
+      "ArticleDate": [
+        {
+          "Year": "2017",
+          "Month": "06",
+          "Day": "01"
+        }
+      ],
+      "ELocationID": [
+        "10.1080/01635581.2017.1324996"
+      ],
+      "Journal": {
+        "ISSN": "1532-7914",
+        "JournalIssue": {
+          "Volume": "69",
+          "Issue": "5",
+          "PubDate": {
+            "Year": "2017",
+            "Month": "Jul"
+          }
+        },
+        "Title": "Nutrition and cancer",
+        "ISOAbbreviation": "Nutr Cancer"
+      },
+      "ArticleTitle": "Impact of Early Enteral Nutrition on Nutritional and Immunological Outcomes of Gastric Cancer Patients Undergoing Gastrostomy: A Systematic Review and Meta-Analysis.",
+      "Pagination": {
+        "StartPage": "693",
+        "EndPage": "701",
+        "MedlinePgn": "693-701"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "The present systematic review and meta-analysis study evaluated the impact of early enteral nutrition (EN) on postoperative nutritional and immunological outcomes of gastric cancer (GC) patients.",
+          "The databases of PubMed, Embase, Springer, and Cochrane library were searched till September 2016 to identify studies which evaluated the effects of EN compared with parenteral nutrition (PN) on postoperative immunological and nutritional status and hospitalization time in GC patients. Mean difference (MD) or standard mean difference (SMD) was calculated and I-square statistic test was used for heterogeneity analysis.",
+          "The present systematic review and meta-analysis have consisted of seven trials, containing 835 GC patients. According to the result of meta-analysis, compared with PN, EN significantly resulted in more increase in the level of albumin [MD = 2.07 (0.49, 3.64)], prealbumin [MD = 9.41 (049, 33.55)], weight [MD = 1.52 (0.32, 2.72)], CD3+ [SMD = 1.96 (1.50, 2.43)], CD4+ [SMD = 2.45 (1.97, 2.93)], natural killers [MD = 5.80 (3.75, 7.85)], and also a decrease in the hospitalization time [MD=-2.39 (-2.74, -2.03)].",
+          "The results demonstrated that early administration of EN is more effective in improving postsurgical nutrition status and immune index in GC patients. So, based on these results, postoperative early administration of EN is recommended for GC patients where possible."
+        ]
+      },
+      "AuthorList": [
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "a Liver and Gastrointestinal Disease Research Center , Tabriz University of Medical Sciences , Tabriz , Iran."
+            }
+          ],
+          "LastName": "Nikniaz",
+          "ForeName": "Zeinab",
+          "Initials": "Z"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "a Liver and Gastrointestinal Disease Research Center , Tabriz University of Medical Sciences , Tabriz , Iran."
+            }
+          ],
+          "LastName": "Somi",
+          "ForeName": "Mohammad Hossein",
+          "Initials": "MH"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "a Liver and Gastrointestinal Disease Research Center , Tabriz University of Medical Sciences , Tabriz , Iran."
+            }
+          ],
+          "LastName": "Nagashi",
+          "ForeName": "Shahnaz",
+          "Initials": "S"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "b Tabriz Health Services Management Research Center , Tabriz University of Medical Sciences , Tabriz , Iran."
+            }
+          ],
+          "LastName": "Nikniaz",
+          "ForeName": "Leila",
+          "Initials": "L"
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "United States",
+      "MedlineTA": "Nutr Cancer",
+      "NlmUniqueID": "7905040",
+      "ISSNLinking": "0163-5581"
+    },
+    "ChemicalList": [
+      {
+        "RegistryNumber": "0",
+        "NameOfSubstance": "Serum Albumin"
+      }
+    ],
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "CD4-Positive T-Lymphocytes"
+      },
+      {
+        "QualifierName": [
+          "methods"
+        ],
+        "DescriptorName": "Enteral Nutrition"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Gastrostomy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Killer Cells, Natural"
+      },
+      {
+        "QualifierName": [
+          "methods"
+        ],
+        "DescriptorName": "Parenteral Nutrition"
+      },
+      {
+        "QualifierName": [
+          "metabolism"
+        ],
+        "DescriptorName": "Serum Albumin"
+      },
+      {
+        "QualifierName": [
+          "diet therapy",
+          "immunology",
+          "surgery"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      }
+    ]
+  },
+  "PubmedData": {
+    "ReferenceList": [],
+    "History": [
+      {
+        "Year": "2017",
+        "Month": "6",
+        "Day": "2",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2018",
+        "Month": "4",
+        "Day": "25",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2017",
+        "Month": "6",
+        "Day": "2",
+        "Hour": "6",
+        "Minute": "0"
+      }
+    ],
+    "PublicationStatus": "ppublish",
+    "ArticleIdList": [
+      "28569563",
+      "10.1080/01635581.2017.1324996"
+    ]
+  }
+}

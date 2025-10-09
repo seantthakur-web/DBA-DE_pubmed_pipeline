@@ -1,0 +1,787 @@
+{
+  "MedlineCitation": {
+    "OtherID": [],
+    "SpaceFlightMission": [],
+    "OtherAbstract": [],
+    "GeneralNote": [],
+    "KeywordList": [
+      [
+        "Chemotherapy response",
+        "Locally advanced gastric cancer",
+        "Prognosis",
+        "Prognostic nutrition index",
+        "Systemic inflammatory immune index"
+      ]
+    ],
+    "CitationSubset": [
+      "IM"
+    ],
+    "InvestigatorList": [],
+    "PMID": "39148031",
+    "DateCompleted": {
+      "Year": "2024",
+      "Month": "08",
+      "Day": "15"
+    },
+    "DateRevised": {
+      "Year": "2024",
+      "Month": "12",
+      "Day": "26"
+    },
+    "Article": {
+      "Language": [
+        "eng"
+      ],
+      "ArticleDate": [
+        {
+          "Year": "2024",
+          "Month": "08",
+          "Day": "15"
+        }
+      ],
+      "ELocationID": [
+        "1014",
+        "10.1186/s12885-024-12771-z"
+      ],
+      "Journal": {
+        "ISSN": "1471-2407",
+        "JournalIssue": {
+          "Volume": "24",
+          "Issue": "1",
+          "PubDate": {
+            "Year": "2024",
+            "Month": "Aug",
+            "Day": "15"
+          }
+        },
+        "Title": "BMC cancer",
+        "ISOAbbreviation": "BMC Cancer"
+      },
+      "ArticleTitle": "Combined systemic inflammatory immune index and prognostic nutrition index as chemosensitivity and prognostic markers for locally advanced gastric cancer receiving neoadjuvant chemotherapy: a retrospective study.",
+      "Pagination": {
+        "StartPage": "1014",
+        "MedlinePgn": "1014"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "The prognosis nutritional index (PNI) and the systemic inflammatory immunological index (SII) are characteristic indicators of the nutritional state and the systemic inflammatory response, respectively. However, there is an unknown combined effect of these indicators in the clinic. Therefore, the practicality of using the SII-PNI score to predict prognosis and tumor response of locally advanced gastric cancer (LAGC) following chemotherapy was the main focus of this investigation.",
+          "We retrospectively analyzed 181 patients with LAGC who underwent curative resection after neoadjuvant chemotherapy in a prospective study (NCT01516944). We divided these patients into tumour regression grade(TRG) 3 and non-TRG3 groups based on tumor response (AJCC/CAP guidelines). The SII and PNI were assessed and confirmed the cut-off values before treatment. The SII-PNI values varied from 0 to 2, with 2 being the high SII (\u2265\u2009471.5) as well as low PNI (\u2264\u200948.6), a high SII or low PNI is represented by a 1 and neither is represented by a 0, respectively.",
+          "51 and 130 samples had TRG3 and non-TRG3 tumor responses respectively. Patients with TRG3 had substantially higher SII-PNI scores than those without TRG3 (p\u2009<\u20090.0001). Patients with greater SII-PNI scores had a poorer prognosis (p\u2009<\u20090.0001). The SII-PNI score was found to be an independent predictor of both overall survival (HR\u2009=\u20094.982, 95%CI: 1.890-10.234, p\u2009=\u20090.001) and disease-free survival (HR\u2009=\u20094.763, 95%CI: 1.994-13.903, p\u2009=\u20090.001) in a multivariate analysis.",
+          "The clinical potential and accuracy of low-cost stratification based on SII-PNI score in forecasting tumor response and prognosis in LAGC is satisfactory."
+        ],
+        "CopyrightInformation": "\u00a9 2024. The Author(s)."
+      },
+      "AuthorList": [
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Research Center and Tumor Research Institute, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Ding",
+          "ForeName": "Ping'an",
+          "Initials": "P"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Research Center and Tumor Research Institute, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Yang",
+          "ForeName": "Jiaxuan",
+          "Initials": "J"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Research Center and Tumor Research Institute, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Wu",
+          "ForeName": "Jiaxiang",
+          "Initials": "J"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Research Center and Tumor Research Institute, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Wu",
+          "ForeName": "Haotian",
+          "Initials": "H"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "AMITA Health Saint Joseph Hospital Chicago, 2900 N. Lake Shore Drive, Chicago, IL, 60657, USA."
+            }
+          ],
+          "LastName": "Sun",
+          "ForeName": "Chenyu",
+          "Initials": "C"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Newham University Hospital, Glen Road, Plaistow, London, E13 8SL, United Kingdom."
+            }
+          ],
+          "LastName": "Chen",
+          "ForeName": "Shuya",
+          "Initials": "S"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Yang",
+          "ForeName": "Peigang",
+          "Initials": "P"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Tian",
+          "ForeName": "Yuan",
+          "Initials": "Y"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Guo",
+          "ForeName": "Honghai",
+          "Initials": "H"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China."
+            }
+          ],
+          "LastName": "Liu",
+          "ForeName": "Yang",
+          "Initials": "Y"
+        },
+        {
+          "Identifier": [
+            "0000-0001-6730-4154"
+          ],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Research Center and Tumor Research Institute, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China. ljmeng@hebmu.edu.cn."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Key Laboratory of Tumour Prevention, Precision Diagnosis and Treatment in Hebei Province, Shijiazhuang, 050011, China. ljmeng@hebmu.edu.cn."
+            }
+          ],
+          "LastName": "Meng",
+          "ForeName": "Lingjiao",
+          "Initials": "L"
+        },
+        {
+          "Identifier": [
+            "0000-0003-1603-3002"
+          ],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Research Center and Tumor Research Institute, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China. zhaoqun@hebmu.edu.cn."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "The Third Department of Surgery, The Fourth Hospital of Hebei Medical University, Shijiazhuang, 050011, Hebei, China. zhaoqun@hebmu.edu.cn."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Hebei Key Laboratory of Precision Diagnosis and Comprehensive Treatment of Gastric Cancer, Shijiazhuang, 050011, China. zhaoqun@hebmu.edu.cn."
+            },
+            {
+              "Identifier": [],
+              "Affiliation": "Big Data Analysis and Mining Application for Precise Diagnosis and Treatment of Gastric Cancer Hebei Provincial Engineering Research Center, Shijiazhuang, 050011, China. zhaoqun@hebmu.edu.cn."
+            }
+          ],
+          "LastName": "Zhao",
+          "ForeName": "Qun",
+          "Initials": "Q"
+        }
+      ],
+      "PublicationTypeList": [
+        "Clinical Trial, Phase II",
+        "Clinical Trial, Phase III",
+        "Journal Article"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "England",
+      "MedlineTA": "BMC Cancer",
+      "NlmUniqueID": "100967800",
+      "ISSNLinking": "1471-2407"
+    },
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [
+          "therapeutic use"
+        ],
+        "DescriptorName": "Antineoplastic Combined Chemotherapy Protocols"
+      },
+      {
+        "QualifierName": [
+          "methods"
+        ],
+        "DescriptorName": "Chemotherapy, Adjuvant"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Inflammation"
+      },
+      {
+        "QualifierName": [
+          "methods"
+        ],
+        "DescriptorName": "Neoadjuvant Therapy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutrition Assessment"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Status"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Prognosis"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Prospective Studies"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Retrospective Studies"
+      },
+      {
+        "QualifierName": [
+          "drug therapy",
+          "pathology",
+          "mortality",
+          "immunology"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Male"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Female"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Adult"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Middle Aged"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Aged"
+      }
+    ],
+    "CoiStatement": "The authors declare no competing interests."
+  },
+  "PubmedData": {
+    "ReferenceList": [
+      {
+        "Reference": [
+          {
+            "Citation": "Joshi SS, Badgwell BD. Current treatment and recent progress in gastric cancer. CA Cancer J Clin. 2021;71(3):264\u201379. 10.3322/caac.21657. 10.3322/caac.21657",
+            "ArticleIdList": [
+              "10.3322/caac.21657",
+              "PMC9927927",
+              "33592120"
+            ]
+          },
+          {
+            "Citation": "Chen W, Zheng R, Baade PD, Zhang S, Zeng H, Bray F, Jemal A, Yu XQ, He J. Cancer statistics in China, 2015. CA Cancer J Clin 2016 Mar-Apr;66(2):115\u201332. 10.3322/caac.21338",
+            "ArticleIdList": [
+              "26808342"
+            ]
+          },
+          {
+            "Citation": "Jiang L, Yang KH, Guan QL, Chen Y, Zhao P, Tian JH. Survival benefit of neoadjuvant chemotherapy for resectable cancer of the gastric and gastroesophageal junction: a meta-analysis. J Clin Gastroenterol. 2015 May-Jun;49(5):387\u201394. 10.1097/MCG.0000000000000212.",
+            "ArticleIdList": [
+              "25144898"
+            ]
+          },
+          {
+            "Citation": "Yu J, Huang C, Sun Y, Su X, Cao H, Hu J, Wang K, Suo J, Tao K, He X, Wei H, Ying M, Hu W, Du X, Hu Y, Liu H, Zheng C, Li P, Xie J, Liu F, Li Z, Zhao G, Yang K, Liu C, Li H, Chen P, Ji J, Li G. Chinese laparoscopic gastrointestinal surgery study (CLASS) Group. Effect of laparoscopic vs Open Distal Gastrectomy on 3-Year disease-free survival in patients with locally advanced gastric Cancer: the CLASS-01 Randomized Clinical Trial. JAMA. 2019;321(20):1983\u201392. 10.1001/jama.2019.5359. 10.1001/jama.2019.5359",
+            "ArticleIdList": [
+              "10.1001/jama.2019.5359",
+              "PMC6547120",
+              "31135850"
+            ]
+          },
+          {
+            "Citation": "Huang C, Liu H, Hu Y, Sun Y, Su X, Cao H, Hu J, Wang K, Suo J, Tao K, He X, Wei H, Ying M, Hu W, Du X, Yu J, Zheng C, Liu F, Li Z, Zhao G, Zhang J, Chen P, Li G. Chinese laparoscopic gastrointestinal surgery study (CLASS) Group. Laparoscopic vs Open Distal Gastrectomy for locally advanced gastric Cancer: five-year outcomes from the CLASS-01 Randomized Clinical Trial. JAMA Surg. 2022;157(1):9\u201317. 10.1001/jamasurg.2021.5104. 10.1001/jamasurg.2021.5104",
+            "ArticleIdList": [
+              "10.1001/jamasurg.2021.5104",
+              "PMC8529527",
+              "34668963"
+            ]
+          },
+          {
+            "Citation": "Coccolini F, Nardi M, Montori G, Ceresoli M, Celotti A, Cascinu S, Fugazzola P, Tomasoni M, Glehen O, Catena F, Yonemura Y, Ansaloni L. Neoadjuvant chemotherapy in advanced gastric and esophago-gastric cancer. Meta-analysis of randomized trials. Int J Surg. 2018;51:120\u20137. 10.1016/j.ijsu.2018.01.008. 10.1016/j.ijsu.2018.01.008",
+            "ArticleIdList": [
+              "10.1016/j.ijsu.2018.01.008",
+              "29413875"
+            ]
+          },
+          {
+            "Citation": "Kanhere H, Goel R, Finlay B, Trochsler M, Maddern G. Radical gastrectomy: still the cornerstone of curative treatment for gastric Cancer in the Perioperative Chemotherapy Era-A Single Institute Experience over a Decade. Int J Surg Oncol. 2018;2018:9371492. 10.1155/2018/9371492. 10.1155/2018/9371492",
+            "ArticleIdList": [
+              "10.1155/2018/9371492",
+              "PMC5820646",
+              "29568650"
+            ]
+          },
+          {
+            "Citation": "Zhang X, Liang H, Li Z, Xue Y, Wang Y, Zhou Z, Yu J, Bu Z, Chen L, Du Y, Wang X, Wu A, Li G, Su X, Xiao G, Cui M, Wu D, Chen L, Wu X, Zhou Y, Zhang L, Dang C, He Y, Zhang Z, Sun Y, Li Y, Chen H, Bai Y, Qi C, Yu P, Zhu G, Suo J, Jia B, Li L, Huang C, Li F, Ye Y, Xu H, Wang X, Yuan Y, E JY, Ying X, Yao C, Shen L, Ji J. RESOLVE study group. Perioperative or postoperative adjuvant oxaliplatin with S-1 versus adjuvant oxaliplatin with capecitabine in patients with locally advanced gastric or gastro-oesophageal junction adenocarcinoma undergoing D2 gastrectomy (RESOLVE): an open-label, superiority and non-inferiority, phase 3 randomised controlled trial. Lancet Oncol. 2021;22(8):1081\u201392. 10.1016/S1470-2045(21)00297-7. 10.1016/S1470-2045(21)00297-7",
+            "ArticleIdList": [
+              "10.1016/S1470-2045(21)00297-7",
+              "34252374"
+            ]
+          },
+          {
+            "Citation": "Xue K, Ying X, Bu Z, Wu A, Li Z, Tang L, Zhang L, Zhang Y, Li Z, Ji J. Oxaliplatin plus S-1 or capecitabine as neoadjuvant or adjuvant chemotherapy for locally advanced gastric cancer with D2 lymphadenectomy: 5-year follow-up results of a phase II-III randomized trial. Chin J Cancer Res. 2018;30(5):516\u201325. 10.21147/j.issn.1000-9604.2018.05.05. 10.21147/j.issn.1000-9604.2018.05.05",
+            "ArticleIdList": [
+              "10.21147/j.issn.1000-9604.2018.05.05",
+              "PMC6232367",
+              "30510363"
+            ]
+          },
+          {
+            "Citation": "Wang F, Qu A, Sun Y, Zhang J, Wei B, Cui Y, Liu X, Tian W, Li Y. Neoadjuvant chemoradiotherapy plus postoperative adjuvant XELOX chemotherapy versus postoperative adjuvant chemotherapy with XELOX regimen for local advanced gastric cancer-A randomized, controlled study. Br J Radiol. 2021;94(1124):20201088. 10.1259/bjr.20201088. 10.1259/bjr.20201088",
+            "ArticleIdList": [
+              "10.1259/bjr.20201088",
+              "PMC8764914",
+              "34260297"
+            ]
+          },
+          {
+            "Citation": "Zhao Q, Lian C, Huo Z, Li M, Liu Y, Fan L, Tan B, Zhao X, Zhang Z, Wang D, Liu Y, Guo H, Yang P, Tian Y, Li Y. The efficacy and safety of neoadjuvant chemotherapy on patients with advanced gastric cancer: a multicenter randomized clinical trial. Cancer Med. 2020;9(16):5731\u201345. 10.1002/cam4.3224. 10.1002/cam4.3224",
+            "ArticleIdList": [
+              "10.1002/cam4.3224",
+              "PMC7433829",
+              "32583567"
+            ]
+          },
+          {
+            "Citation": "Wang FH, Zhang XT, Li YF, Tang L, Qu XJ, Ying JE, Zhang J, Sun LY, Lin RB, Qiu H, Wang C, Qiu MZ, Cai MY, Wu Q, Liu H, Guan WL, Zhou AP, Zhang YJ, Liu TS, Bi F, Yuan XL, Rao SX, Xin Y, Sheng WQ, Xu HM, Li GX, Ji JF, Zhou ZW, Liang H, Zhang YQ, Jin J, Shen L, Li J, Xu RH. The Chinese Society of Clinical Oncology (CSCO): clinical guidelines for the diagnosis and treatment of gastric cancer, 2021. Cancer Commun (Lond). 2021;41(8):747\u201395. 10.1002/cac2.12193. 10.1002/cac2.12193",
+            "ArticleIdList": [
+              "10.1002/cac2.12193",
+              "PMC8360643",
+              "34197702"
+            ]
+          },
+          {
+            "Citation": "Ikoma N, Estrella JS, Blum Murphy M, Das P, Minsky BD, Mansfield P, Ajani JA, Badgwell BD. Tumor Regression Grade in Gastric Cancer after Preoperative Therapy. J Gastrointest Surg. 2021;25(6):1380\u20137. 10.1007/s11605-020-04688-2. 10.1007/s11605-020-04688-2",
+            "ArticleIdList": [
+              "10.1007/s11605-020-04688-2",
+              "PMC11957322",
+              "32542556"
+            ]
+          },
+          {
+            "Citation": "Rihawi K, Ricci AD, Rizzo A, Brocchi S, Marasco G, Pastore LV, Llimpe FLR, Golfieri R, Renzulli M. Tumor-Associated macrophages and Inflammatory Microenvironment in Gastric Cancer: Novel Translational implications. Int J Mol Sci. 2021;22(8):3805. 10.3390/ijms22083805. 10.3390/ijms22083805",
+            "ArticleIdList": [
+              "10.3390/ijms22083805",
+              "PMC8067563",
+              "33916915"
+            ]
+          },
+          {
+            "Citation": "Gu L, Wang M, Cui X, Mo J, Yuan L, Mao F, Zhang K, Ng DM, Chen P, Wang D. Clinical significance of peripheral blood-derived inflammation markers in advanced gastric cancer after radical resection. BMC Surg. 2020;20(1):219. 10.1186/s12893-020-00884-8. 10.1186/s12893-020-00884-8",
+            "ArticleIdList": [
+              "10.1186/s12893-020-00884-8",
+              "PMC7532590",
+              "33008382"
+            ]
+          },
+          {
+            "Citation": "Gong W, Zhao L, Dong Z, Dou Y, Liu Y, Ma C, Qu X. After neoadjuvant chemotherapy platelet/lymphocyte ratios negatively correlate with prognosis in gastric cancer patients. J Clin Lab Anal. 2018;32(5):e22364. 10.1002/jcla.22364. 10.1002/jcla.22364",
+            "ArticleIdList": [
+              "10.1002/jcla.22364",
+              "PMC6816988",
+              "29251364"
+            ]
+          },
+          {
+            "Citation": "Jin H, Zhang G, Liu X, Liu X, Chen C, Yu H, Huang X, Zhang Q, Yu J. Blood neutrophil-lymphocyte ratio predicts survival for stages III-IV gastric cancer treated with neoadjuvant chemotherapy. World J Surg Oncol. 2013;11:112. 10.1186/1477-7819-11-112. 10.1186/1477-7819-11-112",
+            "ArticleIdList": [
+              "10.1186/1477-7819-11-112",
+              "PMC3665689",
+              "23705622"
+            ]
+          },
+          {
+            "Citation": "Hu B, Yang XR, Xu Y, Sun YF, Sun C, Guo W, Zhang X, Wang WM, Qiu SJ, Zhou J, Fan J. Systemic immune-inflammation index predicts prognosis of patients after curative resection for hepatocellular carcinoma. Clin Cancer Res. 2014;20(23):6212\u201322. 10.1158/1078-0432.CCR-14-0442. 10.1158/1078-0432.CCR-14-0442",
+            "ArticleIdList": [
+              "10.1158/1078-0432.CCR-14-0442",
+              "25271081"
+            ]
+          },
+          {
+            "Citation": "Chen JH, Zhai ET, Yuan YJ, Wu KM, Xu JB, Peng JJ, Chen CQ, He YL, Cai SR. Systemic immune-inflammation index for predicting prognosis of colorectal cancer. World J Gastroenterol. 2017;23(34):6261\u201372. 10.3748/wjg.v23.i34.6261. 10.3748/wjg.v23.i34.6261",
+            "ArticleIdList": [
+              "10.3748/wjg.v23.i34.6261",
+              "PMC5603492",
+              "28974892"
+            ]
+          },
+          {
+            "Citation": "Huang H, Liu Q, Zhu L, Zhang Y, Lu X, Wu Y, Liu L. Prognostic value of preoperative systemic Immune-inflammation index in patients with cervical Cancer. Sci Rep. 2019;9(1):3284. 10.1038/s41598-019-39150-0. 10.1038/s41598-019-39150-0",
+            "ArticleIdList": [
+              "10.1038/s41598-019-39150-0",
+              "PMC6397230",
+              "30824727"
+            ]
+          },
+          {
+            "Citation": "Jiang C, Lu Y, Zhang S, Huang Y. Systemic Immune-inflammation index is Superior to Neutrophil to lymphocyte ratio in Prognostic Assessment of breast Cancer patients undergoing Neoadjuvant Chemotherapy. Biomed Res Int. 2020;2020:7961568. 10.1155/2020/7961568. PMID: 33381583; PMCID: PMC7762645. 10.1155/2020/7961568",
+            "ArticleIdList": [
+              "10.1155/2020/7961568",
+              "PMC7762645",
+              "33381583"
+            ]
+          },
+          {
+            "Citation": "Chen L, Kong X, Wang Z, Wang X, Fang Y, Wang J. Pre-treatment systemic immune-inflammation index is a useful prognostic indicator in patients with breast cancer undergoing neoadjuvant chemotherapy. J Cell Mol Med. 2020;24(5):2993\u20133021. 10.1111/jcmm.14934. 10.1111/jcmm.14934",
+            "ArticleIdList": [
+              "10.1111/jcmm.14934",
+              "PMC7077539",
+              "31989747"
+            ]
+          },
+          {
+            "Citation": "Liu P, Jiang Y, Zheng X, Pan B, Xiang H, Zheng M. Pretreatment systemic Immune-inflammation index can predict response to Neoadjuvant Chemotherapy in Cervical Cancer at stages IB2-IIB. Pathol Oncol Res. 2022;28:1610294. 10.3389/pore.2022.1610294. 10.3389/pore.2022.1610294",
+            "ArticleIdList": [
+              "10.3389/pore.2022.1610294",
+              "PMC9092215",
+              "35570842"
+            ]
+          },
+          {
+            "Citation": "Chen L, Yan Y, Zhu L, Cong X, Li S, Song S, Song H, Xue Y. Systemic immune-inflammation index as a useful prognostic indicator predicts survival in patients with advanced gastric cancer treated with neoadjuvant chemotherapy. Cancer Manag Res. 2017;9:849\u201367. 10.2147/CMAR.S151026. 10.2147/CMAR.S151026",
+            "ArticleIdList": [
+              "10.2147/CMAR.S151026",
+              "PMC5733921",
+              "29276407"
+            ]
+          },
+          {
+            "Citation": "Coutu BG, Johnson KC, Bhirud A, Baine MJ, Zhen W, Zhang C, Trujillo KP, Bennion NR. Systemic Immune-Inflammatory Index Association with Survival in patients undergoing trimodality therapy for Lung Cancer. Oncology. 2022;100(5):247\u201356. 10.1159/000520989. 10.1159/000520989",
+            "ArticleIdList": [
+              "10.1159/000520989",
+              "34794142"
+            ]
+          },
+          {
+            "Citation": "Okadome K, Baba Y, Yagi T, Kiyozumi Y, Ishimoto T, Iwatsuki M, Miyamoto Y, Yoshida N, Watanabe M, Baba H. Prognostic Nutritional Index, Tumor-infiltrating lymphocytes, and prognosis in patients with esophageal Cancer. Ann Surg. 2020;271(4):693\u2013700. 10.1097/SLA.0000000000002985. 10.1097/SLA.0000000000002985",
+            "ArticleIdList": [
+              "10.1097/SLA.0000000000002985",
+              "30308614"
+            ]
+          },
+          {
+            "Citation": "Li S, Tian G, Chen Z, Zhuang Y, Li G. Prognostic role of the Prognostic Nutritional Index in Pancreatic Cancer: a Meta-analysis. Nutr Cancer. 2019;71(2):207\u201313. 10.1080/01635581.2018.1559930. 10.1080/01635581.2018.1559930",
+            "ArticleIdList": [
+              "10.1080/01635581.2018.1559930",
+              "30663390"
+            ]
+          },
+          {
+            "Citation": "Xishan Z, Ye Z, Feiyan M, Liang X, Shikai W. The role of prognostic nutritional index for clinical outcomes of gastric cancer after total gastrectomy. Sci Rep. 2020;10(1):17373. 10.1038/s41598-020-74525-8. 10.1038/s41598-020-74525-8",
+            "ArticleIdList": [
+              "10.1038/s41598-020-74525-8",
+              "PMC7562903",
+              "33060715"
+            ]
+          },
+          {
+            "Citation": "Hayasaka K, Shiono S, Suzuki K, Endoh M, Okada Y. Postoperative prognostic nutritional index as a prognostic factor after non-small cell lung cancer surgery. Gen Thorac Cardiovasc Surg. 2020;68(10):1163\u201371. 10.1007/s11748-020-01366-7. 10.1007/s11748-020-01366-7",
+            "ArticleIdList": [
+              "10.1007/s11748-020-01366-7",
+              "32328993"
+            ]
+          },
+          {
+            "Citation": "Ding P, Yang P, Sun C, Tian Y, Guo H, Liu Y, Li Y, Zhao Q. Predictive effect of systemic Immune-inflammation index combined with Prognostic Nutrition Index score on efficacy and prognosis of Neoadjuvant Intraperitoneal and systemic Paclitaxel Combined with Apatinib Conversion Therapy in gastric Cancer patients with positive peritoneal lavage cytology: a prospective study. Front Oncol. 2022;11:791912. 10.3389/fonc.2021.791912. 10.3389/fonc.2021.791912",
+            "ArticleIdList": [
+              "10.3389/fonc.2021.791912",
+              "PMC8807517",
+              "35127498"
+            ]
+          },
+          {
+            "Citation": "Ding P, Guo H, Sun C, Yang P, Kim NH, Tian Y, Liu Y, Liu P, Li Y, Zhao Q. Combined systemic immune-inflammatory index (SII) and prognostic nutritional index (PNI) predicts chemotherapy response and prognosis in locally advanced gastric cancer patients receiving neoadjuvant chemotherapy with PD-1 antibody sintilimab and XELOX: a prospective study. BMC Gastroenterol. 2022;22(1):121. 10.1186/s12876-022-02199-9. 10.1186/s12876-022-02199-9",
+            "ArticleIdList": [
+              "10.1186/s12876-022-02199-9",
+              "PMC8919583",
+              "35287591"
+            ]
+          },
+          {
+            "Citation": "Onodera T, Goseki N, Kosaki G. Prognostic nutritional index in gastrointestinal surgery of malnourished cancer patients. Nihon Geka Gakkai Zasshi. 1984;85(9):1001\u20135.",
+            "ArticleIdList": [
+              "6438478"
+            ]
+          },
+          {
+            "Citation": "Wang FH, Shen L, Li J, Zhou ZW, Liang H, Zhang XT, Tang L, Xin Y, Jin J, Zhang YJ, Yuan XL, Liu TS, Li GX, Wu Q, Xu HM, Ji JF, Li YF, Wang X, Yu S, Liu H, Guan WL, Xu RH. The Chinese Society of Clinical Oncology (CSCO): clinical guidelines for the diagnosis and treatment of gastric cancer. Cancer Commun (Lond). 2019;39(1):10. 10.1186/s40880-019-0349-9. 10.1186/s40880-019-0349-9",
+            "ArticleIdList": [
+              "10.1186/s40880-019-0349-9",
+              "PMC6423835",
+              "30885279"
+            ]
+          },
+          {
+            "Citation": "Shi CJ, Berlin J, Branton PA et al. Protocol for the examination of specimens from patients with carcinoma of the stomach[EB/OL]. [2018\u201312\u2013 03]. https://cap.objects.frb."
+          },
+          {
+            "Citation": "Magzal F, Sela S, Szuchman-Sapir A, Tamir S, Michelis R, Kristal B. In-vivo oxidized albumin- a pro-inflammatory agent in hypoalbuminemia. PLoS ONE. 2017;12(5):e0177799. 10.1371/journal.pone.0177799. 10.1371/journal.pone.0177799",
+            "ArticleIdList": [
+              "10.1371/journal.pone.0177799",
+              "PMC5443520",
+              "28542419"
+            ]
+          },
+          {
+            "Citation": "Don BR, Kaysen G. Serum albumin: relationship to inflammation and nutrition. Semin Dial. 2004 Nov-Dec;17(6):432\u20137. 10.1111/j.0894-0959.2004.17603.x.",
+            "ArticleIdList": [
+              "15660573"
+            ]
+          },
+          {
+            "Citation": "Hussain SP, Harris CC. Inflammation and cancer: an ancient link with novel potentials. Int J Cancer. 2007;121(11):2373\u201380. 10.1002/ijc.23173. 10.1002/ijc.23173",
+            "ArticleIdList": [
+              "10.1002/ijc.23173",
+              "17893866"
+            ]
+          },
+          {
+            "Citation": "Jab\u0142o\u0144ska B, Pawlicki K, Mrowiec S. Associations between Nutritional and Immune Status and clinicopathologic factors in patients with pancreatic Cancer: a comprehensive analysis. Cancers (Basel). 2021;13(20):5041. 10.3390/cancers13205041. 10.3390/cancers13205041",
+            "ArticleIdList": [
+              "10.3390/cancers13205041",
+              "PMC8533745",
+              "34680194"
+            ]
+          },
+          {
+            "Citation": "Antonio N, B\u00f8nnelykke-Behrndtz ML, Ward LC, Collin J, Christensen IJ, Steiniche T, Schmidt H, Feng Y, Martin P. The wound inflammatory response exacerbates growth of pre-neoplastic cells and progression to cancer. EMBO J. 2015;34(17):2219\u201336. 10.15252/embj.201490147. 10.15252/embj.201490147",
+            "ArticleIdList": [
+              "10.15252/embj.201490147",
+              "PMC4585460",
+              "26136213"
+            ]
+          },
+          {
+            "Citation": "Tanaka Y, Ito S, Isobe K. Vancomycin-sensitive bacteria trigger development of colitis-associated colon cancer by attracting neutrophils. Sci Rep. 2016;6:23920. 10.1038/srep23920. 10.1038/srep23920",
+            "ArticleIdList": [
+              "10.1038/srep23920",
+              "PMC4822119",
+              "27050089"
+            ]
+          },
+          {
+            "Citation": "Houghton AM, Rzymkiewicz DM, Ji H, Gregory AD, Egea EE, Metz HE, Stolz DB, Land SR, Marconcini LA, Kliment CR, Jenkins KM, Beaulieu KA, Mouded M, Frank SJ, Wong KK, Shapiro SD. Neutrophil elastase-mediated degradation of IRS-1 accelerates lung tumor growth. Nat Med. 2010;16(2):219\u201323. 10.1038/nm.2084. 10.1038/nm.2084",
+            "ArticleIdList": [
+              "10.1038/nm.2084",
+              "PMC2821801",
+              "20081861"
+            ]
+          },
+          {
+            "Citation": "Kitayama J, Yasuda K, Kawai K, Sunami E, Nagawa H. Circulating lymphocyte number has a positive association with tumor response in neoadjuvant chemoradiotherapy for advanced rectal cancer. Radiat Oncol. 2010;5:47. 10.1186/1748-717X-5-47. 10.1186/1748-717X-5-47",
+            "ArticleIdList": [
+              "10.1186/1748-717X-5-47",
+              "PMC2894847",
+              "20525293"
+            ]
+          },
+          {
+            "Citation": "Migita K, Matsumoto S, Wakatsuki K, Kunishige T, Nakade H, Miyao S, Sho M. Effect of oral nutritional supplementation on the Prognostic Nutritional Index in Gastric Cancer patients. Nutr Cancer. 2021;73(11\u201312):2420\u20137. 10.1080/01635581.2020.1826990. 10.1080/01635581.2020.1826990",
+            "ArticleIdList": [
+              "10.1080/01635581.2020.1826990",
+              "32996343"
+            ]
+          }
+        ],
+        "ReferenceList": []
+      }
+    ],
+    "History": [
+      {
+        "Year": "2023",
+        "Month": "9",
+        "Day": "27"
+      },
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "6"
+      },
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "16",
+        "Hour": "1",
+        "Minute": "44"
+      },
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "16",
+        "Hour": "1",
+        "Minute": "43"
+      },
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "15",
+        "Hour": "23",
+        "Minute": "30"
+      },
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "15"
+      }
+    ],
+    "PublicationStatus": "epublish",
+    "ArticleIdList": [
+      "39148031",
+      "PMC11328362",
+      "10.1186/s12885-024-12771-z",
+      "10.1186/s12885-024-12771-z"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+biopython
+requests
+pandas
+beautifulsoup4
+pyspark
+neo4j
+chromadb
+fastapi
+uvicorn
+streamlit
+langgraph
+mcp-client
+mcp-server
+psycopg2
+python-dotenv

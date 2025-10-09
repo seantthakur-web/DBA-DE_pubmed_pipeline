@@ -1,0 +1,275 @@
+{
+  "MedlineCitation": {
+    "SpaceFlightMission": [],
+    "OtherID": [],
+    "InvestigatorList": [],
+    "CitationSubset": [
+      "IM"
+    ],
+    "OtherAbstract": [],
+    "KeywordList": [
+      [
+        "Disease-related malnutrition",
+        "Gastric cancer",
+        "Malnourished patient",
+        "Nutritional assessment",
+        "Nutritional support",
+        "Personalized medicine",
+        "Surgery"
+      ]
+    ],
+    "GeneralNote": [],
+    "PMID": "32690170",
+    "DateCompleted": {
+      "Year": "2021",
+      "Month": "09",
+      "Day": "24"
+    },
+    "DateRevised": {
+      "Year": "2021",
+      "Month": "09",
+      "Day": "24"
+    },
+    "Article": {
+      "Language": [
+        "eng"
+      ],
+      "ELocationID": [
+        "10.1016/j.clnesp.2020.05.007",
+        "S2405-4577(20)30097-8"
+      ],
+      "ArticleDate": [
+        {
+          "Year": "2020",
+          "Month": "06",
+          "Day": "16"
+        }
+      ],
+      "Journal": {
+        "ISSN": "2405-4577",
+        "JournalIssue": {
+          "Volume": "38",
+          "PubDate": {
+            "Year": "2020",
+            "Month": "Aug"
+          }
+        },
+        "Title": "Clinical nutrition ESPEN",
+        "ISOAbbreviation": "Clin Nutr ESPEN"
+      },
+      "ArticleTitle": "Effects of nutritional interventions on nutritional status in patients with gastric cancer: A systematic review and meta-analysis of randomized controlled trials.",
+      "Pagination": {
+        "StartPage": "28",
+        "EndPage": "42",
+        "MedlinePgn": "28-42"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "Nutritional interventions may improve quality of life, morbidity and mortality in gastric cancer (GC) patients. A growing number of randomized controlled trials (RCTs) evaluated different nutritional strategies - oral nutritional supplements (ONS), enteral nutrition (EN), enteral immunonutrition (EIN), parenteral nutrition (PN) and nutritional counselling - in GC patients. This systematic review and meta-analysis aims to assess the effects of these nutritional interventions on nutritional status of GC patients undergoing gastrectomy and/or chemotherapy.",
+          "A systematic literature search was performed in Pubmed, Web of Science and Scopus databases from inception to March 2020, based on fixed inclusion and exclusion criteria. Effect sizes were estimated with mean difference (MD) or standard mean difference (SMD) with 95% confidence interval (CI) and heterogeneity was assessed by measuring inconsistency (I<sup>2</sup>) based on chi-squared test. Pooled analyses and quality assessment were performed with Review Manager 5.3.",
+          "A total of 25 RCTs were identified, including ONS (n\u00a0=\u00a07), EN (n\u00a0=\u00a06), PN (n\u00a0=\u00a04), EIN (n\u00a0=\u00a05) and nutrition counselling (n\u00a0=\u00a03) interventions. Ten RCTs with 1838 patients were deemed eligible for pooled analyses. Body weight loss was found lower in ONS group versus control group (MD 0.77; 95% CI\u00a0-0.02-1.56; p\u00a0=\u00a00.05). PN and EIN studies did not assess body weight, while all nutrition counselling studies did not show significant differences (p\u00a0>\u00a00.05). Twenty-three out of 25 studies evaluated serum protein levels - albumin (ALB) and/or prealbumin (PA) and/or transferrin (TF). ALB levels did not significantly differ (p\u00a0>\u00a00.05) in 4 ONS studies. Significant improvements of PA levels from baseline to postoperative day (POD)\u00a0\u2265\u00a07 were shown in EN compared with PN groups (MD 19.90; 95% CI 10.09-29.70; p\u00a0<\u00a00.0001). Compared with EN, EIN interventions showed no significant improvements of ALB, PA and TF levels (p > 0.05) from baseline to POD\u00a0\u2265\u00a07. Amino-acid enriched PN showed no significant improvements of ALB, PA and TF levels (p\u00a0>\u00a00.05) while the effect of omega-3 enriched PN was debated. Only three studies out of 25 evaluated total fat mass and skeletal muscle mass and no significant differences (p\u00a0>\u00a00.05) were found between ONS versus control groups.",
+          "Whereas our meta-analysis showed promising results from ONS and EN interventions the optimal delivery of GC nutritional support and nutritional status assessment are still unclear. Moreover, the majority of studies did not consider muscle mass and strength as nutritional parameters. This review highlights the crucial need to close this research gap, with high-quality, large RCTs, adopting effective nutritional assessment tools to evaluate the appropriateness of nutrition strategies."
+        ],
+        "CopyrightInformation": "Copyright \u00a9 2020 European Society for Clinical Nutrition and Metabolism. Published by Elsevier Ltd. All rights reserved."
+      },
+      "AuthorList": [
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "UOC di Nutrizione Clinica, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168, Rome, Italy. Electronic address: emanuele.rinninella@unicatt.it."
+            }
+          ],
+          "LastName": "Rinninella",
+          "ForeName": "Emanuele",
+          "Initials": "E"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Scuola di Specializzazione in Scienza Dell'Alimentazione, Universit\u00e0 di Roma Tor Vergata, Via Montpellier 1, 00133, Rome, Italy."
+            }
+          ],
+          "LastName": "Cintoni",
+          "ForeName": "Marco",
+          "Initials": "M"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "UOSD di Nutrizione Avanzata in Oncologia, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168, Rome, Italy."
+            }
+          ],
+          "LastName": "Raoul",
+          "ForeName": "Pauline",
+          "Initials": "P"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Comprehensive Cancer Center, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168 Rome, Italy."
+            }
+          ],
+          "LastName": "Pozzo",
+          "ForeName": "Carmelo",
+          "Initials": "C"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Comprehensive Cancer Center, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168 Rome, Italy."
+            }
+          ],
+          "LastName": "Strippoli",
+          "ForeName": "Antonia",
+          "Initials": "A"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Comprehensive Cancer Center, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168 Rome, Italy; Dipartimento di Medicina e Chirurgia traslazionale, Universit\u00e0 Cattolica Del Sacro Cuore, Largo F. Vito 1, 00168, Rome, Italy."
+            }
+          ],
+          "LastName": "Bria",
+          "ForeName": "Emilio",
+          "Initials": "E"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Comprehensive Cancer Center, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168 Rome, Italy; Dipartimento di Medicina e Chirurgia traslazionale, Universit\u00e0 Cattolica Del Sacro Cuore, Largo F. Vito 1, 00168, Rome, Italy."
+            }
+          ],
+          "LastName": "Tortora",
+          "ForeName": "Giampaolo",
+          "Initials": "G"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Dipartimento di Medicina e Chirurgia traslazionale, Universit\u00e0 Cattolica Del Sacro Cuore, Largo F. Vito 1, 00168, Rome, Italy; UOC di Medicina Interna e Gastroenterologia, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168, Rome, Italy."
+            }
+          ],
+          "LastName": "Gasbarrini",
+          "ForeName": "Antonio",
+          "Initials": "A"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "UOSD di Nutrizione Avanzata in Oncologia, Fondazione Policlinico Universitario A. Gemelli IRCCS, Largo A. Gemelli 8, 00168, Rome, Italy; Dipartimento di Medicina e Chirurgia traslazionale, Universit\u00e0 Cattolica Del Sacro Cuore, Largo F. Vito 1, 00168, Rome, Italy."
+            }
+          ],
+          "LastName": "Mele",
+          "ForeName": "Maria Cristina",
+          "Initials": "MC"
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "England",
+      "MedlineTA": "Clin Nutr ESPEN",
+      "NlmUniqueID": "101654592",
+      "ISSNLinking": "2405-4577"
+    },
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Enteral Nutrition"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Status"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Parenteral Nutrition"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Randomized Controlled Trials as Topic"
+      },
+      {
+        "QualifierName": [
+          "complications",
+          "therapy"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      }
+    ],
+    "CoiStatement": "Declaration of Competing Interest The authors declare that they have no potential conflict of interest."
+  },
+  "PubmedData": {
+    "ReferenceList": [],
+    "History": [
+      {
+        "Year": "2020",
+        "Month": "1",
+        "Day": "29"
+      },
+      {
+        "Year": "2020",
+        "Month": "4",
+        "Day": "5"
+      },
+      {
+        "Year": "2020",
+        "Month": "5",
+        "Day": "18"
+      },
+      {
+        "Year": "2020",
+        "Month": "7",
+        "Day": "22",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2020",
+        "Month": "7",
+        "Day": "22",
+        "Hour": "6",
+        "Minute": "0"
+      },
+      {
+        "Year": "2021",
+        "Month": "9",
+        "Day": "25",
+        "Hour": "6",
+        "Minute": "0"
+      }
+    ],
+    "PublicationStatus": "ppublish",
+    "ArticleIdList": [
+      "32690170",
+      "10.1016/j.clnesp.2020.05.007",
+      "S2405-4577(20)30097-8"
+    ]
+  }
+}

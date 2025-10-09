@@ -1,0 +1,299 @@
+{
+  "MedlineCitation": {
+    "SpaceFlightMission": [],
+    "OtherID": [],
+    "InvestigatorList": [],
+    "CitationSubset": [
+      "IM"
+    ],
+    "OtherAbstract": [],
+    "KeywordList": [
+      [
+        "Gastric cancer",
+        "Health action process approach",
+        "Mobile health",
+        "Nutrition intervention",
+        "Nutritional behavior"
+      ]
+    ],
+    "GeneralNote": [],
+    "PMID": "40253832",
+    "DateCompleted": {
+      "Year": "2025",
+      "Month": "06",
+      "Day": "13"
+    },
+    "DateRevised": {
+      "Year": "2025",
+      "Month": "06",
+      "Day": "30"
+    },
+    "Article": {
+      "Language": [
+        "eng"
+      ],
+      "ELocationID": [
+        "10.1016/j.ijnurstu.2025.105092",
+        "S0020-7489(25)00101-4"
+      ],
+      "ArticleDate": [
+        {
+          "Year": "2025",
+          "Month": "04",
+          "Day": "14"
+        }
+      ],
+      "Journal": {
+        "ISSN": "1873-491X",
+        "JournalIssue": {
+          "Volume": "168",
+          "PubDate": {
+            "Year": "2025",
+            "Month": "Aug"
+          }
+        },
+        "Title": "International journal of nursing studies",
+        "ISOAbbreviation": "Int J Nurs Stud"
+      },
+      "ArticleTitle": "Effects of a nurse-led individualized mHealth nutrition intervention for post-discharged gastric cancer patients following gastrectomy: A randomized controlled trial.",
+      "Pagination": {
+        "StartPage": "105092",
+        "MedlinePgn": "105092"
+      },
+      "Abstract": {
+        "AbstractText": [
+          "To evaluate the effects of a nurse-led individualized mHealth nutrition intervention on nutritional status, nutritional intake, cognitive beliefs related to nutritional behavior, weight loss, blood parameters, gastrointestinal symptoms, and quality of life in post-discharged gastric cancer patients following gastrectomy.",
+          "This was an assessor-blinded parallel-arm randomized controlled trial with a repeated-measures design.",
+          "The participants were recruited from inpatient gastric surgery units of two tertiary hospitals in Guangzhou, China.",
+          "A total of 108 patients with gastric cancer who underwent gastrectomy and were scheduled to be discharged to their homes were included.",
+          "Participants were randomly allocated to either the intervention or the control group (n\u00a0=\u00a054 per group). The intervention group received the nurse-led individualized mHealth nutrition intervention in addition to the usual care, whereas the control group received only usual care. The intervention included face-to-face education before discharge, the use of an applet and phone consultations. Baseline data were collected on the day of discharge from the hospital (T0). The patients' nutritional status, cognitive beliefs related to nutritional behavior, nutritional intake, weight loss, blood parameters, gastrointestinal symptoms and quality of life were repeatedly measured at 4-week (T1) and 12-week (T2) after discharge.",
+          "Compared with the control group, the intervention group showed significant improvement in nutritional status (\ua7b5\u2084 weeks\u00a0=\u00a0-1.08, 95\u00a0% CI -2.12 to 0.04, p\u00a0=\u00a00.042; \ua7b5\u2081\u2082 weeks\u00a0=\u00a0-1.52, 95\u00a0% CI -2.57 to -0.47, p\u00a0=\u00a00.005). Improvements were also observed in energy and protein intake, weight loss, and cognitive beliefs related to nutritional behavior, including risk perception, outcome expectancy, self-efficacy, intention, and action plan (p\u00a0<\u00a00.05). However, no statistically significant differences were observed in coping plan, gastrointestinal symptoms, blood parameters, and quality of life (p\u00a0>\u00a00.05).",
+          "The nurse-led individualized mHealth nutrition intervention was effective for improving the cognitive beliefs related to nutritional behavior, energy and protein intake, and nutritional status, as well as reducing weight loss among post-discharged gastric cancer patients following gastrectomy.",
+          "ChiCTR2200064808."
+        ],
+        "CopyrightInformation": "Copyright \u00a9 2025 Elsevier Ltd. All rights reserved."
+      },
+      "AuthorList": [
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "School of Nursing, Sun Yat-sen University, Guangzhou, Guangdong, China; Department of Gastric Surgery, Department of General Surgery, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Diseases, The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, Guangdong, China."
+            }
+          ],
+          "LastName": "Jiang",
+          "ForeName": "Xiao-Han",
+          "Initials": "XH"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastric Surgery, State Key Laboratory of Oncology in South China, Collaborative Innovation Center for Cancer Medicine, Sun Yat-Sen University Cancer Center, Guangzhou, China."
+            }
+          ],
+          "LastName": "Yuan",
+          "ForeName": "Xiu-Hong",
+          "Initials": "XH"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Guangdong Province Chaozhou Health School, China."
+            }
+          ],
+          "LastName": "Chen",
+          "ForeName": "Jia-Min",
+          "Initials": "JM"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastric Surgery, State Key Laboratory of Oncology in South China, Collaborative Innovation Center for Cancer Medicine, Sun Yat-Sen University Cancer Center, Guangzhou, China."
+            }
+          ],
+          "LastName": "Yu",
+          "ForeName": "Hong",
+          "Initials": "H"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastric Surgery, Department of General Surgery, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Diseases, The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, Guangdong, China."
+            }
+          ],
+          "LastName": "Chen",
+          "ForeName": "Xi-Jie",
+          "Initials": "XJ"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastric Surgery, Department of General Surgery, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Diseases, The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, Guangdong, China."
+            }
+          ],
+          "LastName": "Chen",
+          "ForeName": "Yong-He",
+          "Initials": "YH"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastric Surgery, Department of General Surgery, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Diseases, The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, Guangdong, China."
+            }
+          ],
+          "LastName": "Li",
+          "ForeName": "Si-Jia",
+          "Initials": "SJ"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "Department of Gastric Surgery, Department of General Surgery, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Diseases, The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, Guangdong, China."
+            }
+          ],
+          "LastName": "Wen",
+          "ForeName": "Yue-E",
+          "Initials": "YE"
+        },
+        {
+          "Identifier": [],
+          "AffiliationInfo": [
+            {
+              "Identifier": [],
+              "Affiliation": "School of Nursing, Sun Yat-sen University, Guangzhou, Guangdong, China; Department of Gastric Surgery, Department of General Surgery, Guangdong Provincial Key Laboratory of Colorectal and Pelvic Floor Diseases, The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, Guangdong, China. Electronic address: pengjsh@mail.sysu.edu.cn."
+            }
+          ],
+          "LastName": "Peng",
+          "ForeName": "Jun-Sheng",
+          "Initials": "JS"
+        }
+      ],
+      "PublicationTypeList": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ]
+    },
+    "MedlineJournalInfo": {
+      "Country": "England",
+      "MedlineTA": "Int J Nurs Stud",
+      "NlmUniqueID": "0400675",
+      "ISSNLinking": "0020-7489"
+    },
+    "MeshHeadingList": [
+      {
+        "QualifierName": [],
+        "DescriptorName": "Humans"
+      },
+      {
+        "QualifierName": [
+          "surgery",
+          "nursing"
+        ],
+        "DescriptorName": "Stomach Neoplasms"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Gastrectomy"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Female"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Male"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Middle Aged"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Telemedicine"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Quality of Life"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Nutritional Status"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Patient Discharge"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "Aged"
+      },
+      {
+        "QualifierName": [],
+        "DescriptorName": "China"
+      }
+    ],
+    "CoiStatement": "Declaration of competing interest The authors declare no conflict of interest."
+  },
+  "PubmedData": {
+    "ReferenceList": [],
+    "History": [
+      {
+        "Year": "2024",
+        "Month": "8",
+        "Day": "20"
+      },
+      {
+        "Year": "2025",
+        "Month": "4",
+        "Day": "8"
+      },
+      {
+        "Year": "2025",
+        "Month": "4",
+        "Day": "13"
+      },
+      {
+        "Year": "2025",
+        "Month": "6",
+        "Day": "14",
+        "Hour": "16",
+        "Minute": "47"
+      },
+      {
+        "Year": "2025",
+        "Month": "4",
+        "Day": "21",
+        "Hour": "0",
+        "Minute": "25"
+      },
+      {
+        "Year": "2025",
+        "Month": "4",
+        "Day": "20",
+        "Hour": "18",
+        "Minute": "5"
+      }
+    ],
+    "PublicationStatus": "ppublish",
+    "ArticleIdList": [
+      "40253832",
+      "10.1016/j.ijnurstu.2025.105092",
+      "S0020-7489(25)00101-4"
+    ]
+  }
+}
