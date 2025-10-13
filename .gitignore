@@ -1,18 +1,40 @@
-# Virtual environment
+# ======================================================
+# 🧠 ENVIRONMENTS & DEPENDENCIES
+# ======================================================
 .venv/
+__pycache__/
+*.pyc
+*.pyo
 
-# Data directories (keep local)
+# ======================================================
+# 💾 DATA DIRECTORIES (local-only)
+# ======================================================
 data/raw/
 data/streaming/
 data/tmp/
-
-# Logs and cache
+etl/outputs/
 logs/
 *.log
-__pycache__/
-*.pyc
 
-# VS Code and OS files
+# ======================================================
+# 🔥 SPARK & TEMP OUTPUTS
+# ======================================================
+spark-warehouse/
+metastore_db/
+derby.log
+*.parquet
+*.orc
+*.snappy
+
+# ======================================================
+# 🧰 IDE & SYSTEM FILES
+# ======================================================
 .vscode/
 .DS_Store
 Thumbs.db
+
+# ======================================================
+# ⚙️ OTHER TEMP FILES
+# ======================================================
+*.tmp
+*.bak
