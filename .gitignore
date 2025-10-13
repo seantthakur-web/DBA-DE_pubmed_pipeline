@@ -1,15 +1,18 @@
-# Virtual environments
+# Virtual environment
 .venv/
 
-# Spark logs & temp
-data/logs/
-*.log
+# Data directories (keep local)
+data/raw/
+data/streaming/
+data/tmp/
 
-# OS / IDE cache
+# Logs and cache
+logs/
+*.log
 __pycache__/
+*.pyc
+
+# VS Code and OS files
+.vscode/
 .DS_Store
 Thumbs.db
-
-# Local test output
-*.tmp
-*.bak
