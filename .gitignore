@@ -1,0 +1,15 @@
+# Virtual environments
+.venv/
+
+# Spark logs & temp
+data/logs/
+*.log
+
+# OS / IDE cache
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Local test output
+*.tmp
+*.bak
