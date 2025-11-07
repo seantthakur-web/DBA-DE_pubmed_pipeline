@@ -25,3 +25,44 @@ The **v4.1 – Azure Integration** release merges all Azure cloud components—V
 ---
 
 ## 📁 Directory Structure
+DBA-DE_pubmed_pipeline/
+├── configs/ # Configuration files (YAML / JSON)
+├── data/ # Local datasets (excluded from Git)
+├── etl/ # Core ETL scripts
+├── ingestion/ # Ingestion pipelines for PubMed abstracts
+├── listeners/ # Azure + Spark listeners (LLaMA, Kafka)
+│ └── llama_listener.py
+├── utils/ # Utility modules (e.g., db_connection.py)
+├── logs/ # Runtime logs for listener & pipeline runs
+├── .env.example # Safe environment template
+└── README.md # Project documentation
+
+yaml
+Copy code
+
+---
+
+## 📆 Release Timeline
+| Version | Milestone | Date | Notes |
+|----------|------------|------|-------|
+| **v4.1** | Azure Integration Live | Nov 2025 | ADF, OpenAI embeddings, pgvector pipeline |
+| **v4.0** | Integration Local | Oct 2025 | Spark → Kafka → OpenAI local flow |
+| **v3.0** | Cloud Migration | Sep 2025 | PostgreSQL + Blob Storage setup |
+| **v2.0** | Foundations | Aug 2025 | ETL pipeline and local environment |
+| **v1.0** | Initial Commit | Jul 2025 | Repo bootstrap and README |
+
+---
+
+## 🧭 Next Milestone (v5.0 – ADF Automation)
+**Goal:** Automate orchestration of the Spark → Kafka → OpenAI flow using Azure Data Factory pipelines.  
+- Add ADF-triggered notebook execution  
+- Automate vector updates to PostgreSQL  
+- Integrate event-driven runs with Event Hub  
+- Extend monitoring via Azure Log Analytics  
+
+---
+
+## 🧠 Maintainer
+**Sean Thakur (@seantthakur-web)**  
+Personal Azure Edition – Integration Live (v4.1)  
+📍 West US Region | ☁️ Azure VM (`pubmed-dev-vm`) | 🧩 PostgreSQL 17 + pgvector 0.8.0
