@@ -1,40 +1,44 @@
-# ======================================================
-# 🧠 ENVIRONMENTS & DEPENDENCIES
-# ======================================================
-.venv/
+# -----------------------------
+# 🧠 PubMed + Azure Pipeline Project
+# Clean .gitignore (v4.1)
+# -----------------------------
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 
-# ======================================================
-# 💾 DATA DIRECTORIES (local-only)
-# ======================================================
-data/raw/
-data/streaming/
-data/tmp/
-etl/outputs/
-logs/
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Environment variables
+.env
+*.env
+
+# Logs and outputs
 *.log
+logs/
+*.out
 
-# ======================================================
-# 🔥 SPARK & TEMP OUTPUTS
-# ======================================================
-spark-warehouse/
-metastore_db/
-derby.log
-*.parquet
-*.orc
-*.snappy
-
-# ======================================================
-# 🧰 IDE & SYSTEM FILES
-# ======================================================
-.vscode/
-.DS_Store
-Thumbs.db
-
-# ======================================================
-# ⚙️ OTHER TEMP FILES
-# ======================================================
+# Cache and temp data
 *.tmp
 *.bak
+*.swp
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# System / IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Azure artifacts
+__azure_artifacts__/
+*.azurelogs
+
+# Data & model outputs
+data/
+outputs/
