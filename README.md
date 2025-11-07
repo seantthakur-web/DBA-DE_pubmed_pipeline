@@ -1,70 +1,27 @@
-# 🧠 PubMed + OrderPipeline Project  
-**Personal Edition — Integration Live (v4)**  
-by [@seantthakur-web](https://github.com/seantthakur-web)
+# 🧭 PubMed + OrderPipeline Project  
+**Version v4.1 – Azure Integration Live**
 
-[![GitHub Repo](https://img.shields.io/badge/repo-DBA--DE__pubmed__pipeline-blue?logo=github)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](#)
-[![Status](https://img.shields.io/badge/status-Integration--Live--v4-00b894.svg)](#)
-[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg?logo=python)](#)
-[![Azure](https://img.shields.io/badge/Deployed%20on-Azure--VM-lightblue?logo=microsoftazure)](#)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/seantthakur-web/DBA-DE_pubmed_pipeline?label=latest%20release)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/releases)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/seantthakur-web/DBA-DE_pubmed_pipeline?label=open%20PRs)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/pulls)
+[![GitHub commits](https://img.shields.io/github/last-commit/seantthakur-web/DBA-DE_pubmed_pipeline/main?label=last%20commit)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/commits/main)
 
 ---
 
-### 🧭 Overview
+## 🧩 Overview
+This repository hosts the **PubMed + OrderPipeline Knowledge Graph Pipeline**, an end-to-end data-engineering system built as part of the *DBA → Data Engineer Learning Track*.
 
-This repository contains the **personal Azure-based version** of the PubMed Knowledge Graph + OrderPipeline integration project.  
-Originally developed under Nestlé’s `nestle-it` organization, this edition now runs entirely under a **personal cloud environment** for continued development and experimentation.
-
-The project demonstrates a **modern data engineering pipeline** integrating:
-- Azure Blob Storage → Event Hub (Kafka mode)
-- Spark Streaming → Azure OpenAI (embeddings)
-- PostgreSQL + `pgvector` for semantic storage
-- LangGraph / RAG integration (later sprint)
-- End-to-end orchestration in Azure VM / ADF  
+The **v4.1 – Azure Integration** release merges all Azure cloud components—VM listener, OpenAI embeddings, pgvector storage, and ADF orchestration—into the unified main branch.
 
 ---
 
-### 🧩 Current Version
-**Version:** `v4 – Integration Live`  
-**Focus:** Spark → EventHub → LLaMA/Azure OpenAI → pgvector  
-**Status:** ✅ Embeddings verified · 🚧 Kafka Integration in progress  
+## 🚀 Highlights (v4.1 – Azure Integration)
+- Added **Azure Data Factory orchestration** and pipeline scripts  
+- Configured **PostgreSQL + pgvector** connection utilities  
+- Integrated **Spark listener + Azure OpenAI embedding workflow**  
+- Added safe `.env.example` template and cleaned `.gitignore`  
+- Verified end-to-end flow on **personal Azure VM (pubmed-dev-vm)**  
+- Tagged and released as **v4.1-AzureIntegration**
 
 ---
 
-### ⚙️ Environment Summary
-
-| Component | Location | Purpose |
-|------------|-----------|----------|
-| **Compute** | Azure VM (`pubmed-dev-vm`) | Runs ETL, Spark listener, Kafka consumer |
-| **Database** | Azure PostgreSQL (pgvector 0.8.0) | Vector + metadata store |
-| **Storage** | Azure Blob (`raw/`, `processed/`) | PubMed ingestion & pipeline staging |
-| **AI Service** | Azure OpenAI `text-embedding-ada-002` | Entity + summary embeddings |
-| **Integration** | Event Hub (Kafka-compatible) | Real-time message streaming |
-| **Version Control** | GitHub: [`seantthakur-web/DBA-DE_pubmed_pipeline`](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline) | Active development branch: `integration` |
-
----
-
-### 🧱 Branching Model
-
-| Branch | Base | Purpose |
-|---------|------|----------|
-| `main` | — | Stable base (production-ready) |
-| `integration` | `main` | Sprint 3+ active development (Integration Live) |
-| `feature/*` | `integration` | Sub-modules (Kafka, Spark, pgvector, etc.) |
-
----
-
-### 🧠 Next Steps
-- [ ] Complete Event Hub (Kafka) integration test
-- [ ] Enable Spark structured streaming listener
-- [ ] Store embeddings + metadata in PostgreSQL
-- [ ] Prepare demo notebook for RAG flow (Sprint 5)
-- [ ] Deploy ADF orchestration (Sprint 4+)
-
----
-
-📫 **Maintainer:** [@seantthakur-web](https://github.com/seantthakur-web)  
-🗓️ **Updated:** November 2025  
-
----
-
+## 📁 Directory Structure
