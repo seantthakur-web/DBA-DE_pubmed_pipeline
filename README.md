@@ -1,68 +1,129 @@
-# 🧭 PubMed + OrderPipeline Project  
-**Version v4.1 – Azure Integration Live**
-
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/seantthakur-web/DBA-DE_pubmed_pipeline?label=latest%20release)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/releases)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/seantthakur-web/DBA-DE_pubmed_pipeline?label=open%20PRs)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/pulls)
-[![GitHub commits](https://img.shields.io/github/last-commit/seantthakur-web/DBA-DE_pubmed_pipeline/main?label=last%20commit)](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/commits/main)
+# 🧬 PubMed + OrderPipeline Project  
+### v4.1 – Azure Integration Live (Sprint 2 Complete)
 
 ---
 
-## 🧩 Overview
-This repository hosts the **PubMed + OrderPipeline Knowledge Graph Pipeline**, an end-to-end data-engineering system built as part of the *DBA → Data Engineer Learning Track*.
+## 📘 Overview
 
-The **v4.1 – Azure Integration** release merges all Azure cloud components—VM listener, OpenAI embeddings, pgvector storage, and ADF orchestration—into the unified main branch.
-
----
-
-## 🚀 Highlights (v4.1 – Azure Integration)
-- Added **Azure Data Factory orchestration** and pipeline scripts  
-- Configured **PostgreSQL + pgvector** connection utilities  
-- Integrated **Spark listener + Azure OpenAI embedding workflow**  
-- Added safe `.env.example` template and cleaned `.gitignore`  
-- Verified end-to-end flow on **personal Azure VM (pubmed-dev-vm)**  
-- Tagged and released as **v4.1-AzureIntegration**
+The **PubMed Knowledge Graph Pipeline** is a hands-on data engineering project designed to modernize scientific literature ingestion using Azure’s modern data stack.  
+This repository mirrors the Nestlé internal stack — re-implemented in a personal Azure environment — to demonstrate full ETL, vector storage, and GenAI readiness.
 
 ---
 
-## 📁 Directory Structure
+## 🎯 Objective
+
+Transition from Database Administrator (DBA) to Data Engineer through a 12-week sprint plan, building a real, production-style pipeline that includes:
+- Data ingestion, transformation, and loading
+- Stream processing with Spark + Kafka (Azure Service Bus)
+- Vector embedding + AI integration (Azure OpenAI / Mistral)
+- Secrets + cost management
+- End-to-end deployment documentation
+
+---
+
+## 🗓️ Sprint Plan — Learning & Delivery Roadmap
+
+| Sprint | Dates | Focus Area | Key Deliverables | Status |
+|:--:|:--:|:--|:--|:--|
+| **1️⃣** | Oct 8 – Oct 21 | 🧱 Foundations | Local ETL pipeline, GitHub repo setup, documentation standards | ✅ Completed |
+| **2️⃣** | Oct 22 – Nov 7 | ☁️ Cloud Migration | Full Azure stack replication + connectivity validation | ✅ Completed |
+| **3️⃣** | Nov 8 – Nov 18 | 🔁 Integration Live | Spark → Kafka → LLaMA → Vector Flow implementation | 🚧 In Progress |
+| **4️⃣** | Nov 19 – Dec 2 | 🧠 AI Layer | PubMed semantic search, embeddings, and retrieval QA | ⏳ Pending |
+| **5️⃣** | Dec 3 – Dec 16 | 🧩 Orchestration | Data Factory + Airflow + dbt pipeline integration | ⏳ Pending |
+| **6️⃣** | Dec 17 – Dec 31 | 🚀 Final Demo | Full end-to-end showcase + recording + documentation | ⏳ Pending |
+
+---
+
+## 🧭 Phase 1 — Rebuild the Nestlé Stack in Personal Azure (✅ Completed Nov 7, 2025)
+
+| Layer | Component | Status | Notes |
+|:--:|:--|:--|:--|
+| 1️⃣ | Resource Group | ✅ `pubmed-rg` (East US 2) | Verified via CLI |
+| 2️⃣ | Azure PostgreSQL Flexible Server (+ pgvector) | ✅ `pubmed-db-test` live | pgvector v0.8 enabled + vector insert verified |
+| 3️⃣ | Azure VM (for Spark + ETL) | ✅ `pubmed-dev-vm` | Python 3.12 + OpenAI SDK installed |
+| 4️⃣ | Blob Storage (raw + processed) | ✅ `pubmedstorage` | Containers created + sample upload verified |
+| 5️⃣ | Service Bus (Kafka-compatible) | ✅ `pubmed-ns` | End-to-end listener validated |
+| 6️⃣ | Azure OpenAI / Mistral API | ✅ Integrated | `text-embedding-3-small` working |
+| 7️⃣ | Key Vault (secrets) | ✅ `pubmed-kv` | Created + verified (Postgres / ServiceBus / OpenAI keys) |
+| 8️⃣ | Cost Management | ✅ Verified | `az costmanagement query` confirmed usage output |
+
+**Commit Reference:** [`2d16915`](https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline/commit/2d16915fc0c25a1fdd0fa50f7cd7b3e323ed133c)  
+**Timestamp:** Fri Nov 7 2025 01:01:49 UTC  (Thu Nov 6 5:01 PM PT)  
+**Sprint Milestone:** `v4.1.0 – Azure Integration Live`
+
+---
+
+## 🏁 Sprint 2 Retrospective Summary  
+**Related JIRA Tickets:** INNVO-416, INNVO-417, INNVO-418, INNVO-419  
+
+| Focus | Outcome |
+|:--|:--|
+| **Pivot** | Moved from Nestlé sandbox to personal Azure subscription to bypass policy restrictions |
+| **Progress** | Fully rebuilt the production Azure stack locally, validated pgvector + Service Bus integration |
+| **Evidence** | Portal screenshots, CLI logs, and cost query output attached in JIRA tickets |
+| **Next Focus** | Transition to Integration Live (Sprint 3): connect Spark → Kafka → Vector listeners |
+
+---
+
+## ⚙️ Repository Structure
+
 DBA-DE_pubmed_pipeline/
-├── configs/ # Configuration files (YAML / JSON)
-├── data/ # Local datasets (excluded from Git)
-├── etl/ # Core ETL scripts
-├── ingestion/ # Ingestion pipelines for PubMed abstracts
-├── listeners/ # Azure + Spark listeners (LLaMA, Kafka)
-│ └── llama_listener.py
-├── utils/ # Utility modules (e.g., db_connection.py)
-├── logs/ # Runtime logs for listener & pipeline runs
-├── .env.example # Safe environment template
-└── README.md # Project documentation
+├── configs/
+├── data/
+├── etl/
+├── ingestion/
+├── listeners/
+├── logs/
+├── nlp_extraction/
+├── scripts/
+├── spark_jobs/
+├── streaming/
+└── README.md
 
 yaml
 Copy code
 
 ---
 
-## 📆 Release Timeline
-| Version | Milestone | Date | Notes |
-|----------|------------|------|-------|
-| **v4.1** | Azure Integration Live | Nov 2025 | ADF, OpenAI embeddings, pgvector pipeline |
-| **v4.0** | Integration Local | Oct 2025 | Spark → Kafka → OpenAI local flow |
-| **v3.0** | Cloud Migration | Sep 2025 | PostgreSQL + Blob Storage setup |
-| **v2.0** | Foundations | Aug 2025 | ETL pipeline and local environment |
-| **v1.0** | Initial Commit | Jul 2025 | Repo bootstrap and README |
+## 🔐 Secrets & Security (Layer 7)
+
+- Secrets stored in **Azure Key Vault**: `pubmed-kv`
+- Added secrets:
+  - `POSTGRES-CONN`
+  - `SERVICEBUS-CONN`
+  - `OPENAI-KEY`
+- Local development uses `.env` under `.gitignore`
+- Verified both CLI and Python retrieval via `DefaultAzureCredential()` (optional for Free Tier)
 
 ---
 
-## 🧭 Next Milestone (v5.0 – ADF Automation)
-**Goal:** Automate orchestration of the Spark → Kafka → OpenAI flow using Azure Data Factory pipelines.  
-- Add ADF-triggered notebook execution  
-- Automate vector updates to PostgreSQL  
-- Integrate event-driven runs with Event Hub  
-- Extend monitoring via Azure Log Analytics  
+## 💰 Cost Management (Layer 8)
 
----
+Executed Azure CLI query:
+```bash
+az rest \
+  --method post \
+  --uri "https://management.azure.com/subscriptions/$(az account show --query id -o tsv)/providers/Microsoft.CostManagement/query?api-version=2023-03-01" \
+  --body '{"type":"Usage","timeframe":"MonthToDate","dataset":{"aggregation":{"totalCost":{"name":"PreTaxCost","function":"Sum"}}}}'
+✅ Returned JSON confirms cost management is active for the Free Tier subscription.
 
-## 🧠 Maintainer
-**Sean Thakur (@seantthakur-web)**  
-Personal Azure Edition – Integration Live (v4.1)  
-📍 West US Region | ☁️ Azure VM (`pubmed-dev-vm`) | 🧩 PostgreSQL 17 + pgvector 0.8.0
+🧠 Sprint 3 Preview — Integration Live
+Listener	Description	Goal
+spark_producer.py	Publish PubMed messages into Service Bus (Kafka-compatible)	Generate event stream
+kafka_consumer_etl.py	Consume + transform stream messages	Stage structured payloads
+llama_listener.py	Process embeddings with local LLaMA/Mistral	Create 1536-dim vectors
+vector_listener.py	Insert embeddings into PostgreSQL (pgvector)	Verify retrieval + query flow
+
+📄 License & Attribution
+Maintained by Sean Thakur as part of the DBA → Data Engineer transition roadmap at Nestlé Health Science Innovation.
+All configurations and scripts are for educational and demonstration use under the Nestlé Innovation Sandbox guidelines.
+
+🏷️ Version History
+Version	Date	Description
+v4.1.0	Nov 7, 2025	Sprint 2 complete — Azure stack replicated successfully
+v4.0.0	Oct 21, 2025	Sprint 1 complete — Local ETL setup
+v3.x	Sep 2025	Pre-Azure experimental builds
+
+Maintainer: seantthakur-web
+Environment: Personal Azure (Free Tier, East US 2)
+Last Updated: Nov 7, 2025
