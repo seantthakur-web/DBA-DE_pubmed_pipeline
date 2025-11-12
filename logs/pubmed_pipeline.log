@@ -1,0 +1,14 @@
+2025-11-11 21:44:23,294 | INFO | ✅ Logger initialized successfully.
+2025-11-11 21:44:23,294 | INFO | 🧪 Test log message from centralized logger.
+2025-11-11 21:50:11,805 | INFO | ✅ Logger initialized successfully.
+2025-11-11 21:50:11,805 | INFO | 🚀 Starting Spark Producer simulation...
+2025-11-11 21:50:11,805 | INFO | 📤 Produced message: 📄 Mock PubMed record #1
+2025-11-11 21:50:12,805 | INFO | 📤 Produced message: 📄 Mock PubMed record #2
+2025-11-11 21:50:13,806 | INFO | 📤 Produced message: 📄 Mock PubMed record #3
+2025-11-11 21:50:14,806 | INFO | ✅ Spark Producer completed successfully.
+2025-11-11 21:57:00,505 | INFO | ✅ Logger initialized successfully.
+2025-11-11 21:57:00,505 | INFO | 🚀 Starting Vector Loader simulation...
+2025-11-11 21:57:00,505 | INFO | 📥 Consumed message: PubMed vector #1
+2025-11-11 21:57:01,506 | INFO | 📥 Consumed message: PubMed vector #2
+2025-11-11 21:57:02,506 | INFO | 📥 Consumed message: PubMed vector #3
+2025-11-11 21:57:03,507 | INFO | ✅ Vector Loader completed successfully.
