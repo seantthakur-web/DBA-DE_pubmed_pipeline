@@ -1,0 +1,35 @@
+router_summarizer_reporter:
+  entry: router
+  exit:
+    - reporter
+  nodes:
+    router:
+      agent: router
+      next: summarizer
+      retries: 1
+    summarizer:
+      agent: summarizer
+      next: reporter
+      retries: 1
+    reporter:
+      agent: reporter
+
+router_summarizer_raganswer_reporter:
+  entry: router
+  exit:
+    - reporter
+  nodes:
+    router:
+      agent: router
+      next: summarizer
+      retries: 1
+    summarizer:
+      agent: summarizer
+      next: rag_answer
+      retries: 1
+    rag_answer:
+      agent: rag_answer
+      next: reporter
+      retries: 2
+    reporter:
+      agent: reporter
