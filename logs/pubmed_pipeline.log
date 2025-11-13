@@ -12,3 +12,279 @@
 2025-11-11 21:57:01,506 | INFO | 📥 Consumed message: PubMed vector #2
 2025-11-11 21:57:02,506 | INFO | 📥 Consumed message: PubMed vector #3
 2025-11-11 21:57:03,507 | INFO | ✅ Vector Loader completed successfully.
+2025-11-12 23:47:56,047 | INFO | ✅ Logger initialized successfully.
+2025-11-12 23:47:56,209 | INFO | ✅ Logger initialized successfully.
+2025-11-12 23:47:56,210 | INFO | Starting LangGraph environment smoke test
+2025-11-12 23:47:56,215 | INFO | LangGraph base graph compiled successfully
+2025-11-12 23:47:56,216 | INFO | Initialized AgentState with trace_id=1f05b95a-440d-4406-b98f-21aaf59a6319
+2025-11-12 23:47:56,217 | INFO | Router node invoked | trace_id=1f05b95a-440d-4406-b98f-21aaf59a6319 | query=test query from smoke test
+2025-11-12 23:47:56,221 | INFO | Smoke test completed | result_state_keys=['query', 'documents', 'metadata', 'summary', 'insights', 'answer', 'trace_id', 'debug']
+2025-11-12 23:47:56,222 | INFO | LangGraph environment smoke test passed
+2025-11-13 00:01:17,145 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:05:48,445 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:05:48,446 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:05:49,321 | INFO | No environment configuration found.
+2025-11-13 00:05:49,325 | INFO | ManagedIdentityCredential will use IMDS
+2025-11-13 00:05:49,329 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '82bd04e6-c024-11f0-9191-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:49,342 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '82bd04e6-c024-11f0-9191-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:50,951 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '82bd04e6-c024-11f0-9191-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:54,168 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '82bd04e6-c024-11f0-9191-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:54,177 | WARNING | Failed to retrieve secret 'AZURE_OPENAI_ENDPOINT': <urllib3.connection.HTTPSConnection object at 0x7c6e40b63da0>: Failed to resolve 'pubmed-pipeline-kv.vault.azure.net' ([Errno -2] Name or service not known)
+2025-11-13 00:05:54,178 | INFO | No environment configuration found.
+2025-11-13 00:05:54,179 | INFO | ManagedIdentityCredential will use IMDS
+2025-11-13 00:05:54,180 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '85a1a30d-c024-11f0-b797-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:54,192 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '85a1a30d-c024-11f0-b797-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:55,801 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '85a1a30d-c024-11f0-b797-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:59,017 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '85a1a30d-c024-11f0-b797-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:59,025 | WARNING | Failed to retrieve secret 'AZURE_OPENAI_DEPLOYMENT': <urllib3.connection.HTTPSConnection object at 0x7c6e40bb2420>: Failed to resolve 'pubmed-pipeline-kv.vault.azure.net' ([Errno -2] Name or service not known)
+2025-11-13 00:05:59,025 | INFO | No environment configuration found.
+2025-11-13 00:05:59,026 | INFO | ManagedIdentityCredential will use IMDS
+2025-11-13 00:05:59,027 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '8885359c-c024-11f0-a976-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:05:59,037 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '8885359c-c024-11f0-a976-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:06:00,644 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '8885359c-c024-11f0-a976-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:06:03,853 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '8885359c-c024-11f0-a976-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:06:03,867 | WARNING | Failed to retrieve secret 'AZURE_OPENAI_API_KEY': <urllib3.connection.HTTPSConnection object at 0x7c6e40bb16a0>: Failed to resolve 'pubmed-pipeline-kv.vault.azure.net' ([Errno -2] Name or service not known)
+2025-11-13 00:06:03,867 | ERROR | Azure OpenAI configuration incomplete, skipping model creation
+2025-11-13 00:06:03,868 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:06:03,868 | INFO | Starting LangGraph smoke test
+2025-11-13 00:06:03,872 | INFO | LangGraph compiled (router → summarizer → END)
+2025-11-13 00:06:03,873 | INFO | Initialized AgentState | trace_id=4a20d0ec-bde7-4a4a-bb35-b70852287f12
+2025-11-13 00:06:03,876 | INFO | Router node invoked | trace_id=4a20d0ec-bde7-4a4a-bb35-b70852287f12 | query=test query for summarizer
+2025-11-13 00:06:03,877 | INFO | Summarizer node invoked | trace_id=4a20d0ec-bde7-4a4a-bb35-b70852287f12
+2025-11-13 00:06:03,877 | WARNING | Azure model unavailable — using fallback summary
+2025-11-13 00:06:03,877 | INFO | Smoke test completed | trace_id=4a20d0ec-bde7-4a4a-bb35-b70852287f12 | keys=['query', 'documents', 'summary', 'insights', 'answer', 'metadata', 'trace_id', 'debug']
+2025-11-13 00:06:03,878 | INFO | LangGraph environment smoke test passed
+2025-11-13 00:16:03,262 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:16:03,264 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:16:04,738 | WARNING | Insight prompt template not found at /home/seanthakur/pubmed_pipeline/rag/prompts/insight_template.txt. Using default prompt.
+2025-11-13 00:16:04,739 | INFO | No environment configuration found.
+2025-11-13 00:16:04,743 | INFO | ManagedIdentityCredential will use IMDS
+2025-11-13 00:16:04,747 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f18e570f-c025-11f0-963b-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:04,758 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f18e570f-c025-11f0-963b-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:06,367 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f18e570f-c025-11f0-963b-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:09,580 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_ENDPOINT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f18e570f-c025-11f0-963b-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:09,588 | WARNING | Failed to retrieve secret 'AZURE_OPENAI_ENDPOINT': <urllib3.connection.HTTPSConnection object at 0x762eea52cd10>: Failed to resolve 'pubmed-pipeline-kv.vault.azure.net' ([Errno -2] Name or service not known)
+2025-11-13 00:16:09,589 | INFO | No environment configuration found.
+2025-11-13 00:16:09,589 | INFO | ManagedIdentityCredential will use IMDS
+2025-11-13 00:16:09,591 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f471cfd6-c025-11f0-b6bf-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:09,598 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f471cfd6-c025-11f0-b6bf-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:11,208 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f471cfd6-c025-11f0-b6bf-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:14,417 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_DEPLOYMENT/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f471cfd6-c025-11f0-b6bf-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:14,427 | WARNING | Failed to retrieve secret 'AZURE_OPENAI_DEPLOYMENT': <urllib3.connection.HTTPSConnection object at 0x762eea52f4a0>: Failed to resolve 'pubmed-pipeline-kv.vault.azure.net' ([Errno -2] Name or service not known)
+2025-11-13 00:16:14,427 | INFO | No environment configuration found.
+2025-11-13 00:16:14,428 | INFO | ManagedIdentityCredential will use IMDS
+2025-11-13 00:16:14,429 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f7541785-c025-11f0-bd91-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:14,438 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f7541785-c025-11f0-bd91-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:16,045 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f7541785-c025-11f0-bd91-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:19,255 | INFO | Request URL: 'https://pubmed-pipeline-kv.vault.azure.net/secrets/AZURE_OPENAI_API_KEY/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f7541785-c025-11f0-bd91-000d3aff6ce0'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.3 (Linux-6.14.0-1012-azure-x86_64-with-glibc2.39)'
+No body was attached to the request
+2025-11-13 00:16:19,268 | WARNING | Failed to retrieve secret 'AZURE_OPENAI_API_KEY': <urllib3.connection.HTTPSConnection object at 0x762eea561d00>: Failed to resolve 'pubmed-pipeline-kv.vault.azure.net' ([Errno -2] Name or service not known)
+2025-11-13 00:16:19,269 | ERROR | Insight Reporter: Azure OpenAI configuration incomplete.
+2025-11-13 00:17:54,702 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:18:31,004 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:19:51,833 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:21:25,247 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:21:43,232 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:22:35,955 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:22:41,984 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:22:41,987 | INFO | Starting LangGraph smoke test
+2025-11-13 00:22:41,991 | INFO | Initialized AgentState | trace_id=bc7433e3-2c0a-48c9-85b8-a93ebe710b71
+2025-11-13 00:22:41,993 | INFO | Router node invoked | trace_id=bc7433e3-2c0a-48c9-85b8-a93ebe710b71 | query=test query for reporter flow
+2025-11-13 00:25:33,337 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:27:11,319 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:28:07,580 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:28:54,905 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:32:04,144 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:33:12,289 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:33:30,120 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:33:30,677 | ERROR | Azure LLM init failed: cannot import name 'summarizer_node' from partially initialized module 'agents.summarizer.summarizer_agent' (most likely due to a circular import) (/home/seanthakur/pubmed_pipeline/agents/summarizer/summarizer_agent.py)
+2025-11-13 00:34:56,218 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:37:49,101 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:40:36,300 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:40:36,359 | INFO | Starting LangGraph smoke test
+2025-11-13 00:40:36,824 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:42:14,604 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:42:14,679 | INFO | Starting LangGraph smoke test
+2025-11-13 00:42:15,160 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:43:10,150 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:43:10,204 | INFO | Starting LangGraph smoke test
+2025-11-13 00:43:10,679 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:43:10,685 | INFO | Router node invoked | trace_id=9f62436f-cb58-410b-b7e1-32f77628e047 | query=test query for reporter flow
+2025-11-13 00:44:12,652 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:44:12,731 | INFO | Starting LangGraph smoke test
+2025-11-13 00:44:13,226 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:44:13,234 | INFO | Router node invoked | trace_id=b1cd7b08-9888-4032-96ad-955765381e7a | query=test query for reporter flow
+2025-11-13 00:45:59,422 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:46:20,863 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:46:20,953 | INFO | Starting LangGraph smoke test
+2025-11-13 00:46:21,483 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:46:21,489 | INFO | Router node invoked | trace_id=4a7e6899-41a3-45a3-92a4-f71d5193f7cb | query=test query for reporter flow
+2025-11-13 00:46:21,490 | INFO | Summarizer node invoked | trace_id=4a7e6899-41a3-45a3-92a4-f71d5193f7cb
+2025-11-13 00:46:21,490 | ERROR | Azure LLM init failed: cannot import name 'get_azure_openai_config' from 'agents.base.langgraph_env' (/home/seanthakur/pubmed_pipeline/agents/base/langgraph_env.py)
+2025-11-13 00:46:21,490 | WARNING | Azure model unavailable — using fallback summary
+2025-11-13 00:49:49,835 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:49:49,897 | INFO | Starting LangGraph smoke test
+2025-11-13 00:49:50,393 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:49:50,398 | INFO | Router node invoked | trace_id=9f6902c4-7184-46df-9dce-57cda5b946f0 | query=test query for reporter flow
+2025-11-13 00:51:25,432 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:51:25,503 | INFO | Starting LangGraph smoke test
+2025-11-13 00:51:26,025 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:51:26,031 | INFO | Router node invoked | trace_id=f5eff306-507f-4675-af0f-62a7ce3f8bef | query=test query for reporter flow
+2025-11-13 00:51:26,031 | INFO | Summarizer node invoked | trace_id=f5eff306-507f-4675-af0f-62a7ce3f8bef
+2025-11-13 00:51:26,032 | INFO | Reporter node invoked | trace_id=f5eff306-507f-4675-af0f-62a7ce3f8bef
+2025-11-13 00:51:26,033 | ERROR | Reporter fallback due to Azure LLM error: build_azure_llm() takes 0 positional arguments but 1 was given
+2025-11-13 00:51:26,033 | INFO | Smoke test completed | trace_id=f5eff306-507f-4675-af0f-62a7ce3f8bef | keys=['query', 'documents', 'summary', 'insights', 'answer', 'metadata', 'trace_id', 'debug']
+2025-11-13 00:51:26,034 | INFO | LangGraph environment smoke test passed
+2025-11-13 00:54:02,580 | INFO | ✅ Logger initialized successfully.
+2025-11-13 00:54:02,614 | INFO | Starting LangGraph smoke test
+2025-11-13 00:54:03,148 | INFO | LangGraph compiled: router → summarizer → reporter → END
+2025-11-13 00:54:03,159 | INFO | Router node invoked | trace_id=30508f2b-be39-47a3-ae03-057c8f79643a | query=test query for reporter flow
+2025-11-13 00:54:03,160 | INFO | Summarizer node invoked | trace_id=30508f2b-be39-47a3-ae03-057c8f79643a
+2025-11-13 00:54:03,162 | INFO | Reporter node invoked | trace_id=30508f2b-be39-47a3-ae03-057c8f79643a
+2025-11-13 00:54:03,989 | ERROR | Azure LLM init failed: Azure OpenAI configuration missing.
+2025-11-13 00:54:03,990 | ERROR | Reporter fallback due to Azure LLM error: 'NoneType' object has no attribute 'invoke'
+2025-11-13 00:54:03,990 | INFO | Smoke test completed | trace_id=30508f2b-be39-47a3-ae03-057c8f79643a | keys=['query', 'documents', 'summary', 'insights', 'answer', 'metadata', 'trace_id', 'debug']
+2025-11-13 00:54:03,991 | INFO | LangGraph environment smoke test passed

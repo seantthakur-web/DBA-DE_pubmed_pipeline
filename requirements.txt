@@ -9,7 +9,11 @@ fastapi
 uvicorn
 streamlit
 langgraph
-mcp-client
 mcp-server
-psycopg2
+psycopg2-binary
 python-dotenv
+azure-identity
+azure-keyvault-secrets
+psycopg2-binary
+requests
+pytest
