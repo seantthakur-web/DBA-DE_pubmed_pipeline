@@ -2,8 +2,7 @@ name: Build and Push Streamlit Image to GHCR
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 
 jobs:
   build-and-push:
@@ -33,3 +32,4 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/pubmed-ui:latest
+
