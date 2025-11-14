@@ -3,12 +3,13 @@ import streamlit as st
 def render_sidebar():
     st.sidebar.title("Navigation")
 
-    # Entrypoint file is main.py inside /app/ui
+    # Home (entrypoint in /ui/main.py)
     st.sidebar.page_link(
         "main.py",
         label="Home"
     )
 
+    # Pages inside /ui/pages/
     st.sidebar.page_link(
         "pages/RAG_Chat.py",
         label="RAG Chat"
@@ -23,4 +24,3 @@ def render_sidebar():
         "pages/AgentTrace.py",
         label="Agent Trace"
     )
-
