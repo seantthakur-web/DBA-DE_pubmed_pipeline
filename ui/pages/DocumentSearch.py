@@ -1,14 +1,14 @@
 import streamlit as st
-from ui.utils.api_client import search_documents
+from utils.api_client import search_documents
 
-st.title("🔍 Document Search (PGVector)")
+st.title("Document Search")
 
-query = st.text_input("Search for documents:")
+term = st.text_input("Search PubMed Abstracts:")
 
 if st.button("Search"):
-    if query.strip():
-        with st.spinner("Retrieving vector search results..."):
-            results = search_documents(query)
-        st.json(results)
-    else:
-        st.warning("Please enter a search query.")
+    with st.spinner("Searching..."):
+        results = search_documents(term)
+
+    st.subheader("Results")
+    st.write(results)
+

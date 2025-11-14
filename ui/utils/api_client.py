@@ -1,31 +1,19 @@
-import os
 import requests
 
-# Default FastAPI URL (running in Docker / Azure)
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+API_BASE = "http://pubmed-api:8000"  # Update when backend is deployed
 
-def ask_rag(query: str):
-    """Calls /rag/ask endpoint."""
-    payload = {"query": query}
-    try:
-        response = requests.post(f"{API_URL}/rag/ask", json=payload)
-        return response.json()
-    except Exception as e:
-        return {"error": str(e)}
+def query_rag(question: str):
+    url = f"{API_BASE}/rag/query"
+    payload = {"query": question}
+    response = requests.post(url, json=payload)
+    if response.status_code != 200:
+        return {"error": response.text}
+    return response.json()
 
-def search_documents(query: str):
-    """Calls /rag/search endpoint."""
-    try:
-        response = requests.get(f"{API_URL}/rag/search", params={"q": query})
-        return response.json()
-    except Exception as e:
-        return {"error": str(e)}
-
-def run_agent_trace(query: str):
-    """Calls /agents/trace endpoint."""
-    payload = {"query": query}
-    try:
-        response = requests.post(f"{API_URL}/agents/trace", json=payload)
-        return response.json()
-    except Exception as e:
-        return {"error": str(e)}
+def search_documents(term: str):
+    url = f"{API_BASE}/documents/search"
+    params = {"query": term}
+    response = requests.get(url, params=params)
+    if response.status_code != 200:
+        return {"error": response.text}
+    return response.json()
