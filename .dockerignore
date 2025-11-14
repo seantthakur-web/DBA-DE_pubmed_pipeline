@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.db
+*.log
+logs/
+etl_output.db
+notepad .env.txt
+.env
+.idea/
+.vscode/
+.DS_Store

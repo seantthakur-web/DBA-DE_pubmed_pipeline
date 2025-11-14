@@ -1,44 +1,70 @@
-# -----------------------------
-# 🧠 PubMed + Azure Pipeline Project
-# Clean .gitignore (v4.1)
-# -----------------------------
+# -----------------------------------------
+# PubMed Pipeline + Azure Web App .gitignore
+# Version: v4.2
+# -----------------------------------------
 
-# Byte-compiled / optimized / DLL files
+# Python cache
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.pyd
 
 # Virtual environments
-.venv/
-env/
 venv/
+.venv/
+ENV/
+env/
 
-# Environment variables
+# Env files
 .env
 *.env
+*.env.*
 
-# Logs and outputs
-*.log
+# Logs
 logs/
+*.log
 *.out
+pubmed_pipeline/listeners/*.out
+pubmed_pipeline/orchestration/*.log
 
-# Cache and temp data
+# Databases
+etl_output.db
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# Spark caches
+spark_jobs/__pycache__/
+spark_jobs/*.pyc
+
+# Data — keep raw and samples, ignore artifacts and logs
+pubmed_pipeline/data/extracted/
+pubmed_pipeline/data/raw_pubmed/
+pubmed_pipeline/data/storage/
+pubmed_pipeline/outputs/
+
+pubmed_pipeline/data/artifacts/
+pubmed_pipeline/data/logs/
+
+# Temp, backup, misc
 *.tmp
 *.bak
 *.swp
 
-# Jupyter / notebooks
+# Jupyter
 .ipynb_checkpoints/
 
-# System / IDE files
+# IDE / System
 .DS_Store
 .vscode/
 .idea/
 
-# Azure artifacts
+# Azure local artifacts
 __azure_artifacts__/
 *.azurelogs
 
-# Data & model outputs
-data/
-outputs/
+# Notes
+notepad .env.txt
+
