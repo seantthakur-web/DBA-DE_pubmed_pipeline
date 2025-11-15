@@ -1,5 +1,0 @@
-2025-11-06 21:45:11,781 [INFO] Listener started for Azure OpenAI embeddings.
-2025-11-06 21:45:42,971 [INFO] HTTP Request: POST https://pubmed-ai-westus.openai.azure.com/openai/deployments/text-embedding-ada-002/embeddings?api-version=2024-02-01 "HTTP/1.1 200 OK"
-2025-11-06 21:45:43,137 [INFO] ✅ Inserted embedding for PMID 1001
-2025-11-06 21:45:43,138 [ERROR] ❌ Error processing message: Expecting value: line 1 column 1 (char 0)
-2025-11-06 21:46:11,971 [ERROR] ❌ Error processing message: Expecting value: line 1 column 1 (char 0)

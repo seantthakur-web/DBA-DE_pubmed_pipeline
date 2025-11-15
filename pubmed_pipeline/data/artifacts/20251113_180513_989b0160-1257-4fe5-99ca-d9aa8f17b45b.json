@@ -1,0 +1,24 @@
+{
+    "query": "cisplatin S-1 gastric cancer outcomes",
+    "summary": "Summary for: cisplatin S-1 gastric cancer outcomes",
+    "insights": "Insights extracted from summary: Summary for: cisplatin S-1 gastric cancer outcomes",
+    "answer": "Answer based on retrieved documents:\n\nMock retrieved document for: cisplatin S-1 gastric cancer outcomes (1/3)\nMock retrieved document for: cisplatin S-1 gastric cancer outcomes (2/3)\nMock retrieved document for: cisplatin S-1 gastric cancer outcomes (3/3)",
+    "trace_id": "989b0160-1257-4fe5-99ca-d9aa8f17b45b",
+    "debug": {
+        "router": {
+            "status": "ok"
+        }
+    },
+    "retrieved_docs": [
+        {
+            "text": "Mock retrieved document for: cisplatin S-1 gastric cancer outcomes (1/3)"
+        },
+        {
+            "text": "Mock retrieved document for: cisplatin S-1 gastric cancer outcomes (2/3)"
+        },
+        {
+            "text": "Mock retrieved document for: cisplatin S-1 gastric cancer outcomes (3/3)"
+        }
+    ],
+    "context": null
+}

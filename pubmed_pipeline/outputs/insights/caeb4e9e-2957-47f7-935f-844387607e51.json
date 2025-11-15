@@ -1,0 +1,16 @@
+{
+  "trace_id": "caeb4e9e-2957-47f7-935f-844387607e51",
+  "answer": "Stubbed response: LangGraph workflow execution is not available. Received query: 'summarize cisplatin outcomes'.",
+  "summary": "Placeholder summary. Once LangGraph integration is fully active, this field will contain a real model-generated summary.",
+  "insights": "Stub insights. This will later contain agent-derived clinical or biomedical insights.",
+  "citations": [],
+  "metadata": {
+    "source": "ask_stub",
+    "note": "Replace with real LangGraph output once integrated."
+  },
+  "debug": {
+    "mode": "stub",
+    "reason": "DagController missing or failed",
+    "requested_workflow": "router_summarizer_raganswer_reporter"
+  }
+}

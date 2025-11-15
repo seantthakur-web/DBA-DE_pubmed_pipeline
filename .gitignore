@@ -1,70 +1,115 @@
-# -----------------------------------------
+# -------------------------------------------------------
 # PubMed Pipeline + Azure Web App .gitignore
-# Version: v4.2
-# -----------------------------------------
+# Version: v4.3 (Complete & Production Ready)
+# -------------------------------------------------------
 
-# Python cache
+# -------------------------
+# Python Cache
+# -------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pdm
 
-# Virtual environments
+# -------------------------
+# Virtual Environments
+# -------------------------
 venv/
 .venv/
 ENV/
 env/
+*/venv/
+*/.venv/
 
-# Env files
+# -------------------------
+# Environment Variables
+# -------------------------
 .env
 *.env
 *.env.*
+secrets.json
+credentials.json
 
+# -------------------------
 # Logs
+# -------------------------
 logs/
 *.log
 *.out
+*.err
 pubmed_pipeline/listeners/*.out
-pubmed_pipeline/orchestration/*.log
+pubmed_pipeline/orchestrator/*.out
 
-# Databases
-etl_output.db
+# -------------------------
+# SQLite / Local Databases
+# (Never push these)
+# -------------------------
+*.db
+*.db-journal
+pubmed_pipeline/data/storage/*.db
+pubmed_pipeline/data/storage/*.db-journal
+pubmed_pipeline/data/artifacts/*.db
 
-# Build artifacts
-*.egg-info/
-build/
+# -------------------------
+# Pipeline Artifacts
+# -------------------------
+pubmed_pipeline/data/raw_pubmed/*
+pubmed_pipeline/data/extracted/*
+pubmed_pipeline/data/logs/*
+pubmed_pipeline/data/tmp/*
+pubmed_pipeline/tmp/*
+
+# -------------------------
+# Build / Cache
+# -------------------------
 dist/
+build/
+*.egg-info/
+.cache/
+__build__/
+.cache/
+*.pickle
 
-# Spark caches
-spark_jobs/__pycache__/
-spark_jobs/*.pyc
+# -------------------------
+# Node / Frontend (in case UI exists)
+# -------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# Data — keep raw and samples, ignore artifacts and logs
-pubmed_pipeline/data/extracted/
-pubmed_pipeline/data/raw_pubmed/
-pubmed_pipeline/data/storage/
-pubmed_pipeline/outputs/
-
-pubmed_pipeline/data/artifacts/
-pubmed_pipeline/data/logs/
-
-# Temp, backup, misc
-*.tmp
-*.bak
-*.swp
-
-# Jupyter
-.ipynb_checkpoints/
-
-# IDE / System
-.DS_Store
+# -------------------------
+# VSCode / Editors
+# -------------------------
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Azure local artifacts
-__azure_artifacts__/
-*.azurelogs
+# -------------------------
+# Azure Deployment Files
+# -------------------------
+.azure/
+*.publishsettings
+*.azureml/
+*.zip
+*.tgz
 
-# Notes
-notepad .env.txt
+# -------------------------
+# Docker / Container
+# -------------------------
+*.tar
+*.img
+*.pid
+docker-temp/
+container-output/
+containerapp/
+
+# -------------------------
+# Streamlit Cache
+# -------------------------
+.streamlit/
+**/.streamlit/
+**/streamlit_cache/
+.streamlit_cache/
 

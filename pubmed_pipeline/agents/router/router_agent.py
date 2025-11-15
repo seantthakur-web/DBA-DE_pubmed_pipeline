@@ -1,24 +1,37 @@
-"""
-router_agent.py
-Simple routing agent for LangGraph pipeline.
-Determines which pipeline branch to follow (fixed branch for now).
-"""
+from pubmed_pipeline.utils.azure_llm import get_client_and_chat_model
+from pubmed_pipeline.utils.log_config import get_logger
 
-from __future__ import annotations
-from pubmed_pipeline.agents.base.shared import logger, mark_node_start, mark_node_end
+logger = get_logger(__name__)
 
 
 class RouterAgent:
+    def __call__(self, state):
+        client, model = get_client_and_chat_model()
+        query = state.query
 
-    def run(self, state: dict) -> dict:
-        node = "router"
-        mark_node_start(state, node)
+        prompt = f"""
+Classify the intent of this biomedical question into exactly one category:
+summarize
+insight
+answer
 
-        query = state.get("query")
-        logger.info("RouterAgent: routing query=%r", query)
+Return ONLY the label.
 
-        # Always send to RAG pipeline (single-path design for Sprint 6)
-        state["route"] = "rag_pipeline"
+Question:
+{query}
+"""
 
-        mark_node_end(state, node)
+        try:
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            intent = resp.choices[0].message.content.strip().lower()
+            state.intent = intent
+            state.execution_order.append("router")
+        except Exception as e:
+            logger.exception(f"RouterAgent failed: {e}")
+            state.intent = "summarize"
+            state.execution_order.append("router_error")
+
         return state

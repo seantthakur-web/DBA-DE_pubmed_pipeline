@@ -1,0 +1,16 @@
+{
+  "trace_id": "23dc3b3c-c4b2-42e5-b572-d44a98c79702",
+  "answer": "Stubbed response: LangGraph workflow execution is not available. Received query: 'Summarize the FLAGS trial outcomes for gastric cancer.'.",
+  "summary": "This is a placeholder summary. Once LangGraph integration is fully wired, this field will contain a concise biomedical summary derived from PubMed.",
+  "insights": "Stub insights: no structured agent insights are available yet. This will later include key findings, risks, and next-step hints.",
+  "citations": [],
+  "metadata": {
+    "source": "ask_stub",
+    "note": "Replace with real LangGraph state once integration is verified."
+  },
+  "debug": {
+    "mode": "stub",
+    "reason": "DagController missing or raised an error",
+    "requested_workflow": "router_summarizer_raganswer_reporter"
+  }
+}

@@ -1,19 +1,33 @@
 import requests
 
-API_BASE = "http://pubmed-api:8000"  # Update when backend is deployed
+API_BASE_URL = "https://pubmed-api.delightfulbeach-6e28760e.westus.azurecontainerapps.io"
 
-def query_rag(question: str):
-    url = f"{API_BASE}/rag/query"
+def rag_chat(question: str):
+    url = f"{API_BASE_URL}/api/ask"
     payload = {"query": question}
-    response = requests.post(url, json=payload)
-    if response.status_code != 200:
-        return {"error": response.text}
-    return response.json()
+    try:
+        r = requests.post(url, json=payload, timeout=30)
+        r.raise_for_status()
+        return r.json()
+    except Exception as ex:
+        return {"error": str(ex)}
 
-def search_documents(term: str):
-    url = f"{API_BASE}/documents/search"
-    params = {"query": term}
-    response = requests.get(url, params=params)
-    if response.status_code != 200:
-        return {"error": response.text}
-    return response.json()
+def document_search(query: str):
+    url = f"{API_BASE_URL}/api/ask"
+    payload = {"query": query}
+    try:
+        r = requests.post(url, json=payload, timeout=30)
+        r.raise_for_status()
+        return r.json()
+    except Exception as ex:
+        return {"error": str(ex)}
+
+def agent_trace(query: str):
+    url = f"{API_BASE_URL}/api/ask"
+    payload = {"query": query}
+    try:
+        r = requests.post(url, json=payload, timeout=30)
+        r.raise_for_status()
+        return r.json()
+    except Exception as ex:
+        return {"error": str(ex)}

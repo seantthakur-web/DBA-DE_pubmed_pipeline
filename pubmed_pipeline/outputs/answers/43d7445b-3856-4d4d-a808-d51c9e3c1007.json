@@ -1,0 +1,16 @@
+{
+  "trace_id": "43d7445b-3856-4d4d-a808-d51c9e3c1007",
+  "answer": {
+    "query": "summarize cisplatin outcomes",
+    "error": "Invalid URL '/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-05-01-preview': No scheme supplied. Perhaps you meant https:///openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-05-01-preview?"
+  },
+  "summary": "Summary for: summarize cisplatin outcomes",
+  "insights": "Insights extracted from summary: Summary for: summarize cisplatin outcomes",
+  "citations": [],
+  "metadata": {},
+  "debug": {
+    "router": {
+      "status": "ok"
+    }
+  }
+}

@@ -1,29 +1,45 @@
-"""
-reporter_agent.py
-Generates basic high-level insights (fallback mode).
-"""
+from pubmed_pipeline.utils.azure_llm import get_client_and_chat_model
+from pubmed_pipeline.utils.log_config import get_logger
 
-from __future__ import annotations
-from pubmed_pipeline.agents.base.shared import logger, mark_node_start, mark_node_end
+logger = get_logger(__name__)
 
 
 class ReporterAgent:
+    def __call__(self, state):
+        client, model = get_client_and_chat_model()
+        docs = state.retrieved_docs or []
 
-    def run(self, state: dict) -> dict:
-        node = "reporter"
-        mark_node_start(state, node)
+        if not docs:
+            state.insights = ["No evidence available"]
+            return state
 
-        query = state.get("query")
-        logger.info("ReporterAgent: start")
+        evidence = "\n\n".join([d["text"] for d in docs])
 
-        # Fallback insights
-        insights = [
-            "High-level topic identified.",
-            "Primary question relates to clinical outcomes."
-        ]
+        prompt = f"""
+Extract 3–5 key biomedical insights from the evidence.
+Return as bullet points.
 
-        logger.warning("ReporterAgent: no LLM provided; generating fallback insights.")
-        state["insights"] = insights
+{evidence}
+"""
 
-        mark_node_end(state, node)
+        try:
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = resp.choices[0].message.content
+
+            insights = [
+                line.lstrip("-• ").strip()
+                for line in raw.splitlines()
+                if line.strip()
+            ]
+
+            state.insights = insights
+            state.execution_order.append("reporter")
+        except Exception as e:
+            logger.exception(f"ReporterAgent error: {e}")
+            state.insights = ["Insight extraction failed."]
+            state.execution_order.append("reporter_error")
+
         return state

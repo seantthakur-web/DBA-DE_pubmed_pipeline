@@ -1,12 +1,21 @@
-venv/
-__pycache__/
-*.pyc
-*.db
-*.log
-logs/
-etl_output.db
-notepad .env.txt
-.env
-.idea/
+# Do NOT ignore everything — ONLY ignore the backend folders
+
+# Ignore backend & heavy folders
+pubmed_pipeline/
+agents/
+api/
+configs/
+data/
+
+# Ignore dev clutter
+**/__pycache__/
 .vscode/
 .DS_Store
+.env
+.git
+.gitignore
+
+# ALLOW UI (IMPORTANT)
+!ui/**
+!requirements.txt
+!.streamlit/**

@@ -1,20 +1,78 @@
-import logging
-from utils.keyvault_client import get_secret
-from utils.log_config import get_logger
+import os
+import psycopg2
+from typing import List, Dict, Any
 
-logger = get_logger("rag_retriever")
+from pubmed_pipeline.utils.azure_llm import get_client_and_embed_model
+from pubmed_pipeline.utils.log_config import get_logger
+
+logger = get_logger(__name__)
 
 
-def retrieve_docs(query: str, top_k: int = 3):
+def get_pg_connection():
+    """Return a psycopg2 connection using environment variables."""
+    try:
+        conn = psycopg2.connect(
+            host=os.getenv("PG_HOST"),
+            port=os.getenv("PG_PORT", 5432),
+            dbname=os.getenv("PG_DATABASE"),
+            user=os.getenv("PG_USER"),
+            password=os.getenv("PG_PASSWORD"),
+            sslmode="require"
+        )
+        return conn
+    except Exception as e:
+        logger.exception(f"PG connection failed: {e}")
+        raise
+
+
+def retrieve_docs(query: str, top_k: int = 5) -> List[Dict[str, Any]]:
     """
-    Dummy pgvector retriever for Sprint 6.
-    Replace with actual PostgreSQL pgvector retrieval.
+    Embed query -> perform cosine distance search using PGVector.
     """
-    logger.info(f"Retrieving top {top_k} results for query: '{query}'")
+    client, embed_model = get_client_and_embed_model()
 
-    # Mock documents for now
+    # 1. Generate embedding
+    try:
+        emb = client.embeddings.create(
+            model=embed_model,
+            input=query
+        ).data[0].embedding
+    except Exception as e:
+        logger.exception(f"Embedding generation failed: {e}")
+        return []
+
+    # 2. Connect to PostgreSQL
+    try:
+        conn = get_pg_connection()
+        cur = conn.cursor()
+    except Exception:
+        return []
+
+    # 3. Run vector search
+    sql = """
+        SELECT pmid, chunk_id, text,
+               1 - (embedding <=> %s::vector) AS score
+        FROM pubmed_chunks
+        ORDER BY embedding <=> %s::vector
+        LIMIT %s;
+    """
+
+    try:
+        cur.execute(sql, (emb, emb, top_k))
+        rows = cur.fetchall()
+        cur.close()
+        conn.close()
+    except Exception as e:
+        logger.exception(f"PGVector query failed: {e}")
+        return []
+
+    # 4. Return results
     return [
-        {"text": f"Mock retrieved document for: {query} (1/{top_k})"},
-        {"text": f"Mock retrieved document for: {query} (2/{top_k})"},
-        {"text": f"Mock retrieved document for: {query} (3/{top_k})"},
+        {
+            "pmid": r[0],
+            "chunk_id": r[1],
+            "text": r[2],
+            "score": float(r[3]),
+        }
+        for r in rows
     ]

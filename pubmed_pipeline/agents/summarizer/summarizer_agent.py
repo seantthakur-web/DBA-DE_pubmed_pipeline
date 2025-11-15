@@ -1,28 +1,33 @@
-"""
-summarizer_agent.py
-Produces a lightweight summary of the user query (fallback mode).
-"""
+from pubmed_pipeline.utils.azure_llm import get_client_and_chat_model
+from pubmed_pipeline.utils.log_config import get_logger
 
-from __future__ import annotations
-from pubmed_pipeline.agents.base.shared import logger, mark_node_start, mark_node_end
+logger = get_logger(__name__)
 
 
 class SummarizerAgent:
+    def __call__(self, state):
+        client, model = get_client_and_chat_model()
+        docs = state.retrieved_docs or []
 
-    def run(self, state: dict) -> dict:
-        node = "summarizer"
-        mark_node_start(state, node)
+        if not docs:
+            state.summaries = None
+            return state
 
-        query = state.get("query")
+        evidence = "\n\n".join([d["text"] for d in docs])
 
-        if not query:
-            summary = "No query provided."
-            logger.warning("SummarizerAgent: missing query; using fallback summary.")
-        else:
-            summary = f"This query asks about: {query[:80]}..."
+        prompt = f"Summarize the following biomedical evidence:\n\n{evidence}"
 
-        logger.info("SummarizerAgent: completed")
-        state["summary"] = summary
+        try:
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            summary = resp.choices[0].message.content.strip()
+            state.summaries = summary
+            state.execution_order.append("summarizer")
+        except Exception as e:
+            logger.exception(f"SummarizerAgent error: {e}")
+            state.summaries = None
+            state.execution_order.append("summarizer_error")
 
-        mark_node_end(state, node)
         return state
