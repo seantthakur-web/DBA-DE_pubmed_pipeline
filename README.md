@@ -1,9 +1,3 @@
-Below is the **updated, production-grade v6.0.0 README**, rewritten for accuracy, clarity, consistency, and completeness based on everything you built today (PubMed rebuild, new ingestion pipeline, pgvector ingestion, LangGraph integration, FastAPI, Caddy reverse-proxy, artifacts system, packaged module, and updated folder structure).
-
-This is a **drop-in replacement** for your root `README.md`.
-
----
-
 # 🧬 PubMed + OrderPipeline Project
 
 ### **v6.0.0 – LangGraph Agents + FastAPI Service + Artifact System (Azure Production Build)**
