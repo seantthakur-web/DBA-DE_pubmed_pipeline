@@ -1,35 +1,22 @@
-"""
-shared.py
-Shared pydantic AgentState for all LangGraph nodes.
-"""
-
-from typing import List, Dict, Any, Optional
+from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
 
 
 class AgentState(BaseModel):
-    """
-    Core state object shared by all agents in the LangGraph pipeline.
-    Supports both partial updates (via extra='allow') and deterministic fallback mode.
-    """
+    # Core request metadata
+    trace_id: str
+    query: str
+    intent: str
 
-    # User query
-    query: str = ""
+    # Retrieval outputs
+    retrieved_docs: List[Dict[str, Any]] = Field(default_factory=list)
+    top_k: int = 5
 
-    # Routing field (set by RouterAgent)
-    route: Optional[str] = None
-
-    # Outputs from summarizer, reporter, and RAGAnswer
-    summary: Optional[str] = None
-    insights: Optional[List[str]] = None
-    retrieved_docs: Optional[List[Dict[str, Any]]] = None
+    # Agent outputs
+    summaries: List[str] = Field(default_factory=list)
+    insights: List[str] = Field(default_factory=list)
     final_answer: Optional[str] = None
 
-    # Metadata
-    trace_id: Optional[str] = None
-    node_sequence: List[str] = Field(default_factory=list)
-    timestamps: Dict[str, float] = Field(default_factory=dict)
-
-    class Config:
-        arbitrary_types_allowed = True
-        extra = "allow"
+    # Execution bookkeeping
+    execution_order: List[str] = Field(default_factory=list)
+    used_llm: bool = False

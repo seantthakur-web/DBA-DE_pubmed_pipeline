@@ -1,21 +1,38 @@
-# Do NOT ignore everything — ONLY ignore the backend folders
+# =======================================================
+# DO NOT ignore backend code — required for API container
+# =======================================================
 
-# Ignore backend & heavy folders
-pubmed_pipeline/
-agents/
-api/
-configs/
-data/
+# Ignore virtual environments
+venv/
+.venv/
 
-# Ignore dev clutter
+# Ignore Python cache
+__pycache__/
 **/__pycache__/
-.vscode/
-.DS_Store
-.env
+*.pyc
+
+# Ignore Git
 .git
 .gitignore
 
-# ALLOW UI (IMPORTANT)
-!ui/**
-!requirements.txt
-!.streamlit/**
+# Ignore OS clutter
+.DS_Store
+.vscode/
+.env
+.env.example
+
+# Do NOT ignore backend
+# (keep pubmed_pipeline/)
+!pubmed_pipeline/**
+
+# Ignore UI when building API container
+# (but API Dockerfile does not copy UI anyway)
+ui/
+ui/**
+
+# Ignore local databases and artifacts
+*.db
+etl_output.db
+pubmed_etl_backup_*.db
+etl_output_backup_*.db
+pubmed_pipeline/data/

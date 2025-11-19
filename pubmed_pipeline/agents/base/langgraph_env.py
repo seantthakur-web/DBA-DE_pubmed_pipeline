@@ -1,46 +1,61 @@
-import uuid
-from typing import List, Optional
+# pubmed_pipeline/agents/base/langgraph_env.py
 
-from pydantic import BaseModel, Field
-from langgraph.graph import StateGraph
+"""
+LangGraph Execution Environment
 
-from pubmed_pipeline.agents.router.router_agent import RouterAgent
-from pubmed_pipeline.agents.summarizer.summarizer_agent import SummarizerAgent
-from pubmed_pipeline.agents.reporter.reporter_agent import ReporterAgent
-from pubmed_pipeline.agents.rag_answer.rag_answer_agent import RAGAnswerAgent
+This module provides the single public function:
 
+    run_graph(query: str, top_k: int = 5) -> AgentState
 
-class AgentState(BaseModel):
-    trace_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    query: str = ""
-    intent: Optional[str] = None
+FastAPI uses this to execute the multi-agent PubMed pipeline.
+"""
 
-    summaries: Optional[str] = None
-    insights: Optional[List[str]] = None
-    final_answer: Optional[str] = None
+from uuid import uuid4
+from typing import Any, Dict
 
-    retrieved_docs: Optional[List[dict]] = None
-    execution_order: List[str] = Field(default_factory=list)
-    used_llm: Optional[bool] = None
+from pubmed_pipeline.agents.base.shared import AgentState
+from pubmed_pipeline.agents.base.dag_controller import build_agent_graph
 
 
-def build_graph():
+def run_graph(query: str, top_k: int = 5) -> AgentState:
     """
-    Build the 4-node LangGraph pipeline:
+    Executes the PubMed LangGraph DAG end-to-end.
 
-        router → summarizer → reporter → rag_answer
+    Parameters
+    ----------
+    query : str
+        User question.
+    top_k : int
+        Number of vector search documents to retrieve.
+
+    Returns
+    -------
+    AgentState
+        Final pipeline state after all agents run.
     """
-    graph = StateGraph(AgentState)
 
-    graph.add_node("router", RouterAgent())
-    graph.add_node("summarizer", SummarizerAgent())
-    graph.add_node("reporter", ReporterAgent())
-    graph.add_node("rag_answer", RAGAnswerAgent())
+    # Unique trace for logs + UI
+    trace_id = str(uuid4())
 
-    graph.set_entry_point("router")
-    graph.add_edge("router", "summarizer")
-    graph.add_edge("summarizer", "reporter")
-    graph.add_edge("reporter", "rag_answer")
-    graph.set_finish_point("rag_answer")
+    # Minimal clean initial state — all other attributes have defaults
+    initial_state = AgentState(
+        trace_id=trace_id,
+        query=query,
+        intent="answer",
+    )
 
-    return graph.compile()
+    # Build the DAG
+    graph = build_agent_graph()
+
+    # Runtime config for nodes
+    config: Dict[str, Any] = {
+        "configurable": {
+            "top_k": top_k,
+            "trace_id": trace_id,
+        }
+    }
+
+    # Execute pipeline
+    final_state = graph.invoke(initial_state, config=config)
+
+    return final_state

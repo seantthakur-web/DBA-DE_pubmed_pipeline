@@ -1,0 +1,28 @@
+location: westus
+type: Microsoft.App/containerApps
+name: pubmed-ui
+properties:
+  managedEnvironmentId: /subscriptions/b1b1bdc2-8826-42f5-9c02-92c7c0316464/resourceGroups/pubmed-rg/providers/Microsoft.App/managedEnvironments/pubmed-env
+
+  configuration:
+    ingress:
+      external: true
+      targetPort: 8501
+      transport: auto
+    registries: []
+    secrets: []
+
+  template:
+    revisionSuffix: ""
+    containers:
+      - name: pubmed-ui
+        image: ghcr.io/seantthakur-web/pubmed-ui:latest
+        env:
+          - name: CACHE_BUST
+            value: "1"
+        resources:
+          cpu: 0.5
+          memory: 1Gi
+    scale:
+      minReplicas: 1
+      maxReplicas: 1

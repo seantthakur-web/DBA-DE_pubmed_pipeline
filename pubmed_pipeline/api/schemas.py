@@ -1,42 +1,37 @@
-"""
-schemas.py
-Pydantic models used across the FastAPI layer.
-"""
-
-from __future__ import annotations
-
+from typing import List, Optional, Any
 from pydantic import BaseModel
-from typing import Any, Dict, List, Optional
 
 
-# ============================================================
-# Request Model for /api/ask
-# ============================================================
-
+# -----------------------------
+# Request Schema
+# -----------------------------
 class AskRequest(BaseModel):
     """
-    POST /api/ask
+    Incoming request to /api/ask.
     """
     query: str
+    top_k: Optional[int] = 5
 
 
-# ============================================================
-# Response Model for /api/ask
-# ============================================================
-
+# -----------------------------
+# Response Schema
+# -----------------------------
 class AskResponse(BaseModel):
     """
-    Unified response for a full LangGraph pipeline run.
+    Structured response returned by LangGraph pipeline.
+    Mirrors the AgentState output.
     """
-    trace_id: str
-    summary: Optional[str]
+    trace_id: Optional[str]
+    query: str
+    intent: Optional[str]
+
+    summaries: Optional[List[Any]]
     insights: Optional[List[Any]]
-    retrieved_docs: Optional[List[Dict[str, Any]]]
+
     final_answer: Optional[str]
-    artifacts: Dict[str, str]
-    metadata: Dict[str, Any]
 
+    execution_order: Optional[List[str]]
+    used_llm: Optional[bool]
 
-# ============================================================
-# (Optional) You may add more models later if needed
-# ============================================================
+    # List of retrieved PubMed docs (dicts: pmid, chunk_id, text, score)
+    retrieved_docs: Optional[List[dict]]

@@ -1,78 +1,98 @@
 import os
 import psycopg2
-from typing import List, Dict, Any
+from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
 
-from pubmed_pipeline.utils.azure_llm import get_client_and_embed_model
 from pubmed_pipeline.utils.log_config import get_logger
+from pubmed_pipeline.utils.azure_llm import embed_text
+from pubmed_pipeline.utils.db_connection import get_connection
 
 logger = get_logger(__name__)
 
-
-def get_pg_connection():
-    """Return a psycopg2 connection using environment variables."""
-    try:
-        conn = psycopg2.connect(
-            host=os.getenv("PG_HOST"),
-            port=os.getenv("PG_PORT", 5432),
-            dbname=os.getenv("PG_DATABASE"),
-            user=os.getenv("PG_USER"),
-            password=os.getenv("PG_PASSWORD"),
-            sslmode="require"
-        )
-        return conn
-    except Exception as e:
-        logger.exception(f"PG connection failed: {e}")
-        raise
+# Load .env explicitly
+ENV_PATH = "/home/seanthakur/pubmed_pipeline/.env"
+if os.path.exists(ENV_PATH):
+    load_dotenv(ENV_PATH)
+    logger.info(f"Loaded .env from {ENV_PATH}")
+else:
+    logger.error(f"Missing .env file at {ENV_PATH}")
 
 
-def retrieve_docs(query: str, top_k: int = 5) -> List[Dict[str, Any]]:
-    """
-    Embed query -> perform cosine distance search using PGVector.
-    """
-    client, embed_model = get_client_and_embed_model()
+# ------------------------------------------------------------------------------------
+# Convert Python embedding array → pgvector literal '[0.1, 0.2, ...]'
+# ------------------------------------------------------------------------------------
+def _to_pgvector_literal(embedding):
+    return "[" + ",".join(str(x) for x in embedding) + "]"
 
-    # 1. Generate embedding
-    try:
-        emb = client.embeddings.create(
-            model=embed_model,
-            input=query
-        ).data[0].embedding
-    except Exception as e:
-        logger.exception(f"Embedding generation failed: {e}")
-        return []
 
-    # 2. Connect to PostgreSQL
-    try:
-        conn = get_pg_connection()
-        cur = conn.cursor()
-    except Exception:
-        return []
+# ------------------------------------------------------------------------------------
+# Run pgvector similarity search
+# ------------------------------------------------------------------------------------
+def _vector_search(conn, embedding, top_k):
+    vector_literal = _to_pgvector_literal(embedding)
 
-    # 3. Run vector search
     sql = """
-        SELECT pmid, chunk_id, text,
-               1 - (embedding <=> %s::vector) AS score
+        SELECT 
+            pmid,
+            chunk_id,
+            text,
+            1 - (embedding <=> %s::vector) AS score
         FROM pubmed_chunks
         ORDER BY embedding <=> %s::vector
         LIMIT %s;
     """
 
     try:
-        cur.execute(sql, (emb, emb, top_k))
-        rows = cur.fetchall()
-        cur.close()
-        conn.close()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute(sql, (vector_literal, vector_literal, top_k))
+            rows = cur.fetchall()
+            return rows
+
     except Exception as e:
-        logger.exception(f"PGVector query failed: {e}")
+        logger.error(f"Vector search failed: {e}")
+        raise
+
+
+# ------------------------------------------------------------------------------------
+# Main retrieval function (public)
+# ------------------------------------------------------------------------------------
+def retrieve_docs(query: str, top_k: int = 5):
+    logger.info(f"RAG retriever: querying pgvector | query='{query}' | top_k={top_k}")
+
+    # ----------------------------------------------------
+    # 1. Embed the query
+    # ----------------------------------------------------
+    try:
+        embedding = embed_text(query)
+        logger.info(f"Obtained embedding of length {len(embedding)}")
+    except Exception as e:
+        logger.error(f"Embedding failed: {e}")
         return []
 
-    # 4. Return results
-    return [
-        {
-            "pmid": r[0],
-            "chunk_id": r[1],
-            "text": r[2],
-            "score": float(r[3]),
-        }
-        for r in rows
-    ]
+    # ----------------------------------------------------
+    # 2. PGVector search
+    # ----------------------------------------------------
+    try:
+        conn = get_connection()
+    except Exception as e:
+        logger.error(f"PG connection failed: {e}")
+        return []
+
+    try:
+        rows = _vector_search(conn, embedding, top_k)
+        results = []
+
+        for r in rows:
+            results.append({
+                "pmid": r["pmid"],
+                "chunk_id": r["chunk_id"],
+                "text": r["text"],
+                "score": float(r["score"]),
+            })
+
+        conn.close()
+        return results
+
+    except Exception as e:
+        logger.error(f"RAG retriever: vector search error: {e}")
+        return []

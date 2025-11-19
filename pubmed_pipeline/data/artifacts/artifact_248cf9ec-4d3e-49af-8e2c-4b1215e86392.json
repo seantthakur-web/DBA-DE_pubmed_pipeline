@@ -1,0 +1,22 @@
+{
+  "trace_id": "248cf9ec-4d3e-49af-8e2c-4b1215e86392",
+  "query": "cisplatin resistance in gastric cancer",
+  "intent": "answer",
+  "execution_order": [
+    "router",
+    "summarizer",
+    "reporter",
+    "rag_answer"
+  ],
+  "summaries": [
+    "Key Findings:\n- No biomedical evidence retrieved.\n\nClinical Interpretation:\nInsufficient evidence to generate a meaningful summary."
+  ],
+  "insights": [
+    "No biomedical evidence available for analysis.",
+    "Insufficient data to draw clinical conclusions.",
+    "Lack of evidence highlights a gap in current biomedical research."
+  ],
+  "retrieved_docs": [],
+  "final_answer": "No grounded biomedical answer can be produced because no PubMed evidence was retrieved. Consider refining the query.",
+  "_artifact_created_at": "2025-11-18T18:42:36.011538"
+}
