@@ -1,256 +1,124 @@
-# 🧬 PubMed + OrderPipeline Project
+PubMed AI System
+v6.0.0 – Agentic LangGraph RAG + FastAPI (Azure Production Build)
 
-### **v6.0.0 – LangGraph Agents + FastAPI Service + Artifact System (Azure Production Build)**
+This release upgrades the PubMed Pipeline from a local prototype into a production-grade biomedical question-answering service running entirely on Azure infrastructure.
 
-This release transforms the PubMed Pipeline from a standalone RAG demo into a **fully agentic biomedical AI service** deployed on an **Azure VM** with:
+It includes:
 
-* LangGraph multi-agent DAG
-* FastAPI backend
-* pgvector retrieval
-* Azure OpenAI (embeddings + LLM)
-* Caddy reverse proxy for external access
-* Full artifact logging for every request
-* Packaged Python module (`pip install -e .`)
+LangGraph multi-agent reasoning pipeline
 
-It is now a **cloud-served biomedical question-answering system** with reproducible trace artifacts and a modular agent architecture.
+FastAPI backend (public HTTP endpoint via Caddy)
 
----
+pgvector-based semantic retrieval
 
-# 📘 Overview
+Azure OpenAI (embeddings + LLM completions)
 
-The PubMed Knowledge Graph + OrderPipeline system has gone through **six structured sprints**, evolving from raw ETL extraction into a fully orchestrated agentic RAG service.
+Artifact logging for trace-level reproducibility
 
-### **This v6.0 milestone delivers:**
+Modular Python package (pip install -e .)
 
-* A **four-node LangGraph DAG**:
-  `router → summarizer → reporter → rag_answer`
-* The **DAGController**, a production orchestrator managing execution, caching, and trace IDs
-* A **FastAPI backend** exposing a public RAG endpoint
-* A complete **artifact system** generating reproducible logs per run
-* Updated **pgvector ingestion pipeline** for 225 PubMed abstracts
-* **Caddy reverse proxy** exposing public HTTP access
-* **Packaged Python module** with fully stable import paths
+Updated PubMed ingestion pipeline (≈900 chunks)
 
----
+The system now supports end-to-end biomedical RAG, deployed on an Azure VM as a service.
 
-# 🎯 Core Architecture (v6.0)
+1. Overview
 
-### **Request Flow**
+The PubMed RAG pipeline ingests biomedical abstracts, embeds them using Azure OpenAI, stores them in PostgreSQL pgvector, and exposes a LangGraph-powered multi-agent workflow via FastAPI.
 
-```
+The full stack includes:
+
+Azure VM (Ubuntu 22.04)
+
+FastAPI + Uvicorn
+
+Caddy reverse proxy (public access)
+
+PostgreSQL Flexible Server + pgvector
+
+Azure OpenAI (embeddings + LLM)
+
+LangGraph multi-agent DAG
+
+ArtifactWriter for traceable outputs
+
+2. High-Level Architecture (v6.0)
 User Query
-    ↓
+   ↓
 FastAPI (/rag/query)
-    ↓
-DAGController (trace_id generated)
-    ↓
-LangGraph DAG
-    • router
-    • summarizer
-    • reporter
-    • rag_answer
-    ↓
+   ↓
+DAGController (trace_id created)
+   ↓
+LangGraph DAG Execution
+   ├── Router Agent
+   ├── Summarizer Agent
+   ├── Reporter Agent
+   └── RAG Answer Agent
+   ↓
 ArtifactWriter → data/artifacts/<trace_id>/
-    ↓
-FastAPI JSON Response
-```
+   ↓
+JSON Response returned to client/UI
 
-### **Produced Artifacts (per request)**
+3. LangGraph DAG (v6.0)
 
-Located at: `pubmed_pipeline/data/artifacts/<trace_id>/`
+The system uses a 4-node deterministic pipeline:
 
-```
-final_answer.txt
-retrieved_docs.json
-summary.txt
-insights.json
-state.json
-metadata.json
-```
+Node	Description
+router	Generates embeddings → runs pgvector similarity search → prepares retrieved_docs
+summarizer	Produces multi-bullet summaries of retrieved evidence
+reporter	Extracts structured clinical/biomedical insights
+rag_answer	Produces final grounded answer with optional PMIDs
 
----
+Execution order is captured in execution_order.
 
-# 🧭 Sprint Progress Overview
+4. FastAPI Backend
+Endpoints
+Method	Route	Purpose
+POST	/rag/query	Main agentic RAG endpoint
+GET	/health	Health check
+GET	/docs	Swagger UI
 
-| Sprint | Dates           | Focus Area                    | Status                   |
-| ------ | --------------- | ----------------------------- | ------------------------ |
-| 1      | Oct 8 – Oct 21  | Foundations / ETL             | ✅ Completed              |
-| 2      | Oct 22 – Nov 7  | Azure Migration               | ✅ Completed              |
-| 3      | Nov 8 – Nov 18  | Integration Live              | ✅ Completed              |
-| 4      | Nov 19 – Dec 2  | AI Layer (Semantic Retrieval) | ✅ Completed              |
-| 5      | Dec 3 – Dec 16  | RAG Finalization              | ✅ Completed              |
-| 6      | Dec 17 – Dec 31 | LangGraph + API Service       | **✅ Completed (v6.0.0)** |
+FastAPI uses the DAGController internally to execute LangGraph, create trace IDs, and generate artifacts.
 
----
+5. Artifact System
 
-# 🚀 What’s New in v6.0.0
+For every user query, the system generates:
 
-## **1. Full LangGraph Multi-Agent Pipeline**
-
-Agents implemented and integrated:
-
-* **RouterAgent** – classifies query intent
-* **SummarizerAgent** – condenses retrieved evidence
-* **ReporterAgent** – extracts structured insights
-* **RAGAnswerAgent** – final biomedical answer generation
-
-Includes full deterministic DAG and smoke tests.
-
----
-
-## **2. DAGController (Production Orchestrator)**
-
-Core responsibilities:
-
-* Builds and caches a single LangGraph instance
-* Generates UUID trace IDs
-* Writes artifacts
-* Executes end-to-end runs via `run_pipeline()`
-* Returns structured response objects
-
-Entry point:
-`pubmed_pipeline/agents/base/dag_controller.py`
-
----
-
-## **3. ArtifactWriter System**
-
-Every request creates:
-
-```
 pubmed_pipeline/data/artifacts/<trace_id>/
-    final_answer.txt
-    summary.txt
-    insights.json
-    retrieved_docs.json
-    metadata.json
-    state.json
-```
+│
+├── final_answer.txt
+├── summary.txt
+├── insights.json
+├── retrieved_docs.json
+├── state.json
+└── metadata.json
 
-This enables:
 
-* Auditing
-* Reproducibility
-* Trace-correctness
-* Debugging & ML observability
+Uses:
 
----
+Auditing
 
-## **4. FastAPI Production Backend**
+Debugging
 
-### Endpoints:
+Explainability
 
-| Method | Route        | Purpose                   |
-| ------ | ------------ | ------------------------- |
-| POST   | `/rag/query` | Main agentic RAG endpoint |
-| GET    | `/health`    | Health check              |
-| GET    | `/docs`      | Swagger UI                |
+Reproducibility
 
-Module:
-`pubmed_pipeline/api/main.py`
+This supports research-grade observability.
 
-FastAPI uses the DAGController internally.
+6. Deployment Status (Azure)
+Component	Status	Notes
+Azure VM	✔	Python 3.12, Uvicorn running on port 8000
+Caddy	✔	Public reverse proxy → exposes /docs
+FastAPI	✔	Available externally
+LangGraph Agents	✔	All nodes integrated
+ArtifactWriter	✔	Producing full trace runs
+pgvector Ingestion	✔	~900 chunks (225 abstracts)
 
----
+Public Swagger UI:
 
-## **5. Caddy Reverse Proxy (Azure VM)**
-
-`/etc/caddy/Caddyfile`:
-
-```
-http://4.246.99.209 {
-    reverse_proxy 127.0.0.1:8000
-}
-```
-
-This exposes **public HTTP** without modifying Uvicorn.
-
-### Public Swagger UI:
-
-**[http://4.246.99.209/docs](http://4.246.99.209/docs)**
-
----
-
-## **6. Python Packaging (pip install -e .)**
-
-You can now run:
-
-```bash
-pip install -e .
-```
-
-Imports are now clean:
-
-```
-from pubmed_pipeline.agents.router.router_agent import RouterAgent
-from pubmed_pipeline.api.main import app
-```
-
----
-
-# 🌐 Deployment Status (Azure VM)
-
-| Component           | Status | Notes                                                |
-| ------------------- | ------ | ---------------------------------------------------- |
-| Azure VM            | ✅      | Ubuntu 22.04, Python 3.12                            |
-| FastAPI (Uvicorn)   | ✅      | Running 0.0.0.0:8000                                 |
-| Caddy Reverse Proxy | ✅      | Public endpoint                                      |
-| Swagger UI          | ✅      | [http://4.246.99.209/docs](http://4.246.99.209/docs) |
-| LangGraph DAG       | ✅      | All nodes integrated                                 |
-| ArtifactWriter      | ✅      | Producing per-trace folders                          |
-| pgvector ingestion  | ✅      | ~900 chunks from 225 abstracts                       |
-
----
-
-# 🧪 Validation Checklist (v6.0)
-
-### **1. LangGraph Smoke Test**
-
-```bash
-python3 -m pubmed_pipeline.agents.base.dag_controller
-```
-
-Expected:
-
-* Router ✔
-* Summarizer ✔
-* Reporter ✔
-* RAG_Answer ✔
-* Artifacts folder created ✔
-
----
-
-### **2. FastAPI**
-
-```bash
-curl http://127.0.0.1:8000/health
-```
-
----
-
-### **3. Public Endpoint**
-
-From any device/browser:
-
-```
 http://4.246.99.209/docs
-```
 
----
-
-### **4. RAG Query Example**
-
-```bash
-curl -X POST "http://4.246.99.209/rag/query" \
-  -H "Content-Type: application/json" \
-  -d '{"query":"cisplatin S-1 gastric cancer outcomes", "top_k": 3}'
-```
-
----
-
-# 📁 Updated Directory Structure (After Packaging)
-
-```
+7. Directory Structure (After Packaging)
 pubmed_pipeline/
 │
 ├── pubmed_pipeline/
@@ -273,82 +141,64 @@ pubmed_pipeline/
 │   │   ├── rag_retriever.py
 │   │   ├── ingest_chunks_to_pg.py
 │   │
-│   ├── data/
-│   │   ├── artifacts/
-│   │   ├── storage/
-│   │
 │   ├── utils/
 │   │   ├── log_config.py
-│   │   ├── keyvault_client.py
 │   │   ├── artifact_writer.py
+│   │   ├── keyvault_client.py
+│   │
+│   ├── data/
+│   │   ├── artifacts/
+│   │   └── storage/
 │   │
 │   ├── etl/
 │   │   ├── rebuild_papers_from_pubmed_query.py
 │   │
 │   └── __init__.py
 │
-├── setup.py
-├── README.md
 ├── requirements.txt
-└── venv/
-```
+├── setup.py
+└── README.md
 
----
-
-# 🧠 Key Modules
-
-### **DAGController**
-
-Core orchestrator for agent runs:
-`pubmed_pipeline/agents/base/dag_controller.py`
-
-### **ArtifactWriter**
-
-Trace-level I/O:
-`pubmed_pipeline/utils/artifact_writer.py`
-
-### **FastAPI Backend**
-
-`pubmed_pipeline/api/main.py`
-
-### **LangGraph DAG**
-
-Defined in the **Controller**, not spread across files.
-
----
-
-# 📝 Release Notes — v6.0.0
-
-### **Added**
-
-* Full 4-node LangGraph pipeline
-* DAGController orchestration engine
-* ArtifactWriter subsystem
-* FastAPI production backend
-* Public Swagger UI (Caddy reverse proxy)
-* Editable Python module packaging
-* Rebuilt pgvector ingestion pipeline for 225 abstracts
-
-### **Improved**
-
-* Logging (structured + timestamps)
-* Error traceability
-* Import path stability
-* Modular architecture
-
-### **Removed**
-
-* Old test scripts
-* Experimental entrypoints
-* Duplicate agent wrappers
-
----
-
-# 👤 Maintainer
-
-**Sean Thakur**
-Azure VM: `pubmed-dev-vm` (West US)
-Project Repo: `github.com/seantthakur-web/DBA-DE_pubmed_pipeline`
-Last Updated: **Nov 15, 2025**
+8. Sprint Progress
+Sprint	Dates	Objective	Status
+1	Oct 8 – Oct 21	ETL Foundations	✔ Completed
+2	Oct 22 – Nov 7	Azure Migration	✔ Completed
+3	Nov 8 – Nov 18	Integration Live	✔ Completed
+4	Nov 19 – Dec 2	Semantic Retrieval	✔ Completed
+5	Dec 3 – Dec 16	RAG Finalization	✔ Completed
+6	Dec 17 – Dec 31	LangGraph + API Service	✔ Completed
+9. Validation Checklist (v6.0)
+Smoke Test
+python3 -m pubmed_pipeline.agents.base.dag_controller
 
 
+Expected results:
+
+Router ✔
+
+Summarizer ✔
+
+Reporter ✔
+
+Rag Answer ✔
+
+Artifacts generated ✔
+
+FastAPI Health
+curl http://127.0.0.1:8000/health
+
+Public Endpoint
+http://4.246.99.209/docs
+
+Sample Query
+curl -X POST "http://4.246.99.209/rag/query" \
+  -H "Content-Type: application/json" \
+  -d '{"query":"cisplatin S-1 gastric cancer outcomes", "top_k": 3}'
+
+10. Maintainer
+
+Sean Thakur
+Azure VM: pubmed-dev-vm (West US)
+GitHub: https://github.com/seantthakur-web/DBA-DE_pubmed_pipeline
+
+Last Updated: Nov 15, 2025
